@@ -47,6 +47,10 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <button className="bg-sky-500 hover:bg-yellow-300 font-bold">
+          Save changes
+        </button>
+        <p className="text-xl mt-12 mb-4 underline">Projects</p>
       </main>
       <footer className={styles.footer}>
         <a
