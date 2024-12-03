@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
+import Header from "@/components/header";
 
 export default function Home() {
   return (
@@ -47,10 +48,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <button className="bg-sky-500 hover:bg-yellow-300 font-bold">
-          Save changes
-        </button>
-        <p className="text-xl mt-12 mb-4 underline">Projects</p>
+        <Header />
       </main>
       <footer className={styles.footer}>
         <a

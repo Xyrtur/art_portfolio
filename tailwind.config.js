@@ -10,7 +10,11 @@ export const content = [
   "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
 ];
 export const theme = {
-  extend: {},
+  extend: {
+    fontFamily: {
+      kolker_brush: ["var(--font-kolker-brush)"],
+    },
+  },
 };
 export const darkMode = "class";
 export const plugins = [nextui()];
