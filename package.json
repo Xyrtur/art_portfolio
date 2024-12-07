@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "watch": "npx tailwindcss -i ./src/styles/globals.css -o ./src/output.css --watch"
   },
   "dependencies": {
-    "@next/font": "^14.2.15",
     "@nextui-org/react": "^2.4.8",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^11.12.0",

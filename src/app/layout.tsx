@@ -3,6 +3,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
+import { Providers } from "./providers";
+import Header from "@/components/header";
 
 const geistSans = localFont({
   src: "../../public/fonts/GeistVF.woff",
@@ -14,10 +16,15 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const latinModernMono = localFont({
+  src: "../../public/fonts/lmmono10-regular.otf",
+  variable: "--font-lmmono",
+});
 const kolkerBrush = localFont({
   src: "../../public/fonts/KolkerBrush-Regular.ttf",
   variable: "--font-kolker-brush",
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,10 +38,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${kolkerBrush.variable}`}
-      >
-        {children}
+      <body 
+        className={`${geistSans.variable} ${geistMono.variable} ${kolkerBrush.variable} ${latinModernMono.variable} font-lmmono`}
+      ><Providers> <section><nav>
+        <Header/>
+      </nav>
+      {children}
+      </section>
+      </Providers>
       </body>
     </html>
   );

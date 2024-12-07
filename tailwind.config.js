@@ -13,6 +13,7 @@ export const theme = {
   extend: {
     fontFamily: {
       kolker_brush: ["var(--font-kolker-brush)"],
+      lmmono: ["var(--font-lmmono)"],
     },
   },
 };
