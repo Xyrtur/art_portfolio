@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-        className={`${geistSans.variable} ${geistMono.variable} ${kolkerBrush.variable} ${latinModernMono.variable} font-lmmono`}
+        className={`${geistSans.variable} ${geistMono.variable} ${kolkerBrush.variable} ${latinModernMono.variable} font-lmmono bg-primary-gray min-h-lvh`}
       ><Providers> <section><nav>
         <Header/>
       </nav>

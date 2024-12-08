@@ -15,6 +15,11 @@ export const theme = {
       kolker_brush: ["var(--font-kolker-brush)"],
       lmmono: ["var(--font-lmmono)"],
     },
+    colors: {
+      'link-color': '#F4F7BE',
+      'secondary-color': '#FAB3A9',
+      'primary-gray': '#252527'
+    },
   },
 };
 export const darkMode = "class";

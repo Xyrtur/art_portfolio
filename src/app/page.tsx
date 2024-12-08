@@ -1,13 +1,19 @@
 /** @format */
 
-import Image from "next/image";
-import styles from "./page.module.css";
-
+import Footer from "@/components/footer";
+import Head from "next/head";
 
 export default function LandingPage() {
   return (
-    <div className="grid h-lvh">
-      <main className="flex">
+    <>
+    <Head>
+    <title>Ysabelle Kmiec</title>
+    <meta name="description">
+      Explore scratchboard and the artist
+    </meta>
+  </Head>
+    <div className="grid">
+      <main className="flex px-8 mt-15">
         
 
           <p>
@@ -18,7 +24,9 @@ export default function LandingPage() {
 
         
       </main>
-      
+      <Footer/>
     </div>
+    
+    </>
   );
 }
