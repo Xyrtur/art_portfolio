@@ -16,9 +16,10 @@ export const theme = {
       lmmono: ["var(--font-lmmono)"],
     },
     colors: {
-      'link-color': '#F4F7BE',
-      'secondary-color': '#FAB3A9',
-      'primary-gray': '#252527'
+      "link-color": "#F4F7BE",
+      "secondary-color": "#FAB3A9",
+      "primary-gray": "#252527",
+      "banner-color": "#EAC435",
     },
   },
 };
