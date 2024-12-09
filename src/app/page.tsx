@@ -1,8 +1,8 @@
 /** @format */
 
 import Footer from "@/components/footer";
-import { Banner } from "@/components/landing_page/banner";
-import { GenericCTA } from "@/components/landing_page/page_ctas";
+import { Banner } from "@/components/landing/banner";
+import { GenericCTA } from "@/components/landing/page_ctas";
 import Head from "next/head";
 
 export default function LandingPage() {
