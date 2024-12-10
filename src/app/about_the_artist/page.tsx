@@ -1,22 +1,21 @@
 /** @format */
 
 import Footer from "@/components/footer";
-import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'About The Artist - Ysabelle Kmiec',
+  description: 'Biography'
+}
 
 export default function AboutTheArtistPage() {
   return (
     <>
-    <Head>
-    <title>About The Artist - Ysabelle Kmiec</title>
-    <meta name="description">
-      Biography 
-    </meta>
-  </Head>
-    <div className="grid">
-      <main className="flex">       
-      </main>
-      <Footer/>
-      
-    </div></>
+      <div className="grid">
+        <main className="flex">
+        </main>
+        <Footer />
+
+      </div></>
   );
 }

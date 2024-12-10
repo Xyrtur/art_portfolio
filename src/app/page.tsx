@@ -3,16 +3,18 @@
 import Footer from "@/components/footer";
 import { Banner } from "@/components/landing/banner";
 import { GenericCTA } from "@/components/landing/page_ctas";
-import Head from "next/head";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: 'Ysabelle Kmiec',
+  description: 'Explore scratchboard and the artist'
+}
 
 export default function LandingPage() {
   return (
     <>
-      <Head>
-        <title>Ysabelle Kmiec</title>
-        <meta name="description">Explore scratchboard and the artist</meta>
-      </Head>
-      <main className="flex flex-col px-[10rem] mb-[10rem]">
+      <main className="flex flex-col px-[10rem]">
         <Banner
           eventName="Crimson Alley"
           eventText="Join me in Manchester Square from Dec 7, 14 to see my works"

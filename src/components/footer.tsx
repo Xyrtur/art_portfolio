@@ -16,7 +16,7 @@ function FooterLink({ hrefName, name }: { hrefName: string; name: string }) {
 
 const Footer = () => {
   return (
-    <footer className="w-full text-[0.9rem]">
+    <footer className="w-full text-[0.9rem] mt-[10rem]">
       <div className="flex flex-col justify-center">
         <div className="grid grid-cols-6 gap-x-8 grid-flow-col w-2/3 place-self-center">
           <ol className="row-span-4 col-span-2 place-self-center">
