@@ -3,7 +3,8 @@
 import { ProfilePicture } from "@/components/profile_picture";
 import Footer from "@/components/footer";
 import { Metadata } from "next";
-import { ContactForm } from "@/components/contact_form";
+import { ContactForm } from "@/components/contact/contact_form";
+import CaptchaProvider from "@/components/contact/captcha_provider";
 
 export const metadata: Metadata = {
   title: 'Contact - Ysabelle Kmiec',
@@ -27,7 +28,9 @@ export default function ContactPage() {
         </div>
         <div className="flex flex-col w-full">
           <h1 className="text-xl mb-7 pl-8">Contact Form</h1>
-          <ContactForm />
+          <CaptchaProvider>
+            <ContactForm />
+          </CaptchaProvider>
         </div>
 
 
