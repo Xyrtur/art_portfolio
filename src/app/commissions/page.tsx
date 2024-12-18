@@ -1,7 +1,9 @@
 /** @format */
 
+import { CommissionExample } from "@/components/commission_example";
 import Footer from "@/components/footer";
 import { Metadata } from "next";
+import { CldImage } from "next-cloudinary";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -13,9 +15,9 @@ export default function CommissionsPage() {
   return (
     <>
       <main className="flex flex-col items-center">
-        <p className="text-3xl text-center">Commission Your Scratchboard</p>
+        <h1 className="text-2xl text-center">Commission Your Scratchboard</h1>
         <div className="grid grid-cols-2 gap-x-24 w-2/3 mt-14">
-          <div className="aspect-[9/12] bg-slate-500 h-[30rem] justify-self-end"></div>
+          <CommissionExample />
           <div className="relative col-start-2">
             <div className="absolute top-10 border-1 border-secondary-color p-14 white-space: pre-line space-y-10 h-min mr-24">
               <p>Want a pet portrait? Have another idea? I can create a unique and
@@ -75,7 +77,7 @@ export default function CommissionsPage() {
           </p>
           <Link
             href="/contact"
-            className="col-span-2 text-center border-1 border-secondary-color p-4 w-[12%] place-self-center mt-8 hover:text-secondary-color"
+            className="col-span-2 place-self-center mt-8 transition ease-in-out duration-300 delay-100 hover:scale-105 w-max py-2 px-5 border-1 border-secondary-color hover:cursor-pointer hover:bg-secondary-color focus:bg-secondary-color hover:text-black focus:text-black"
           >
             Contact Me
           </Link>

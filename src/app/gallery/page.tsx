@@ -1,11 +1,11 @@
 /** @format */
 
-import { CloudinaryResource } from "@/components/gallery/types";
-import GalleryPage from "./home-page";
+import { CloudinaryImage } from "utils/types";
+import GalleryPage from "./home_page";
 
 import { v2 as cloudinary } from "cloudinary";
-import getBase64ImageUrl from "@/components/gallery/generate_blur_placeholders";
 import { Metadata } from "next";
+import getBase64ImageUrl from "utils/generate_blur_placeholders";
 
 cloudinary.config({
   cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
@@ -13,14 +13,14 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 async function fetchArtworks() {
-  const { resources }: { resources: CloudinaryResource[] } =
+  const { resources }: { resources: CloudinaryImage[] } =
     await cloudinary.search
       .expression("tags=artwork")
       .with_field("context")
       .sort_by("display_name", "desc")
       .execute();
 
-  const blurImagePromises = resources.map((image: CloudinaryResource) => {
+  const blurImagePromises = resources.map((image: CloudinaryImage) => {
     return getBase64ImageUrl(image);
   });
   const blurDataURLs = await Promise.all(blurImagePromises);

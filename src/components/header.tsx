@@ -22,7 +22,7 @@ const Header = () => {
         </p>
         <p className="font-kolker_brush text-7xl/6 text-white pl-16">Kmiec</p>
       </Link>
-      <div className="row-span-1">
+      <div className="row-span-1 mr-8">
         <NavItem hrefName="gallery" name="Gallery" />
         <NavItem hrefName="commissions" name="Commissions" />
         <NavItem hrefName="art_process" name="Art Process" />

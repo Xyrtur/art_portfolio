@@ -1,11 +1,11 @@
 /** @format */
 
 import { getPlaiceholder } from "plaiceholder";
-import { CloudinaryResource } from "./types";
+import { CloudinaryImage } from "../../utils/types";
 
-const cache = new Map<CloudinaryResource, string>();
+const cache = new Map<CloudinaryImage, string>();
 
-export default async function getBase64ImageUrl(image: CloudinaryResource) {
+export default async function getBase64ImageUrl(image: CloudinaryImage) {
   const url = cache.get(image);
   if (url) {
     return url;

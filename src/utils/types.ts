@@ -2,7 +2,7 @@
 
 export interface SharedModalProps {
     index: number;
-    artworks: CloudinaryResource[];
+    artworks: CloudinaryImage[];
     changeArtworkId: (newVal: number) => void;
     closeModal: () => void;
     direction?: number;
@@ -15,7 +15,7 @@ export interface Context {
     height_in: string;
     order: string;
 }
-export interface CloudinaryResource {
+export interface CloudinaryImage {
     public_id: string;
     order: string;
     secure_url: string;
@@ -24,4 +24,10 @@ export interface CloudinaryResource {
     aspect_ratio: number;
     context: Context;
     blurDataUrl: string;
+}
+
+export interface VideoAsset {
+    id: string;
+    created_at: string;
+    passthrough: string | undefined;
 }

@@ -3,14 +3,14 @@
 "use client";
 
 import { CldImage } from "next-cloudinary";
-import { CloudinaryResource } from "./types";
+import { CloudinaryImage } from "../../utils/types";
 
 export function Artwork({
   resource,
   lastViewedPhoto,
   lastViewedPhotoRef,
 }: {
-  resource: CloudinaryResource;
+  resource: CloudinaryImage;
   lastViewedPhoto: number;
   lastViewedPhotoRef: any;
 }) {
@@ -22,9 +22,8 @@ export function Artwork({
           ? lastViewedPhotoRef
           : null
       }
-      className={`cursor-zoom-in h-min ${
-        resource.width > resource.height ? "w-[90%]" : "w-[70%]"
-      }`}
+      className={`cursor-zoom-in h-min ${resource.width > resource.height ? "w-[90%]" : "w-[70%]"
+        }`}
       onClick={() => {
         window.history.pushState(
           null,
@@ -46,9 +45,8 @@ export function Artwork({
         <p className="text-lg justify-self-start">{resource.context.caption}</p>
         <p className=" text-sm justify-self-start">{resource.context.alt}</p>
         <div
-          className={`justify-self-end self-center row-span-2 rounded-full bg-red-500 h-6 w-6 ${
-            resource.context.isSold == "true" ? "visible" : "collapse"
-          }`}
+          className={`justify-self-end self-center row-span-2 rounded-full bg-red-500 h-6 w-6 ${resource.context.isSold == "true" ? "visible" : "collapse"
+            }`}
         />
       </div>
     </div>

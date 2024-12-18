@@ -23,6 +23,8 @@ export const theme = {
       "link-color": "#F4F7BE",
       "secondary-color": "#FAB3A9",
       "primary-gray": "#252527",
+      "accent-gray": "#3F3F44",
+      "accent-gray-border": "#2E333C",
       "banner-color": "#EAC435",
     }
   },

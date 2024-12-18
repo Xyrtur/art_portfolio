@@ -1,7 +1,7 @@
 /** @format */
 
 import getBase64ImageUrl from "./generate_blur_placeholders";
-import { CloudinaryResource } from "./types";
+import { CloudinaryImage } from "../../utils/types";
 import { v2 as cloudinary } from "cloudinary";
 cloudinary.config({
   cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
@@ -9,14 +9,14 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 export async function fetchArtworks() {
-  const { resources }: { resources: CloudinaryResource[] } =
+  const { resources }: { resources: CloudinaryImage[] } =
     await cloudinary.search
       .expression("tags=artwork")
       .with_field("context")
       .sort_by("display_name", "desc")
       .execute();
 
-  const blurImagePromises = resources.map((image: CloudinaryResource) => {
+  const blurImagePromises = resources.map((image: CloudinaryImage) => {
     return getBase64ImageUrl(image);
   });
   const blurDataURLs = await Promise.all(blurImagePromises);
