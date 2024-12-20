@@ -8,7 +8,7 @@ export function Timeline({ showTitle = true, showDates = true }: { showTitle?: b
     let yStart = 45;
     let yEnd = 120;
     let circleCenter = 150;
-    let lineDelay = 1;
+    let lineDelay = 3;
     let circleDelay = lineDelay + 1;
     let firstLineCompleted = false;
     const shapeList: JSX.Element[] = [];
@@ -55,9 +55,9 @@ export function Timeline({ showTitle = true, showDates = true }: { showTitle?: b
             strokeLinejoin="round"
 
         >
-            < motion.rect fill="none" initial={{ pathLength: 0 }}
-                animate={{ pathLength: 1 }} transition={{
-                    duration: 1
+            < motion.rect fill="none" initial={{ pathLength: 0, opacity: 0 }}
+                animate={{ pathLength: 1, opacity: 1 }} transition={{
+                    duration: 1, delay: 2
                 }} x="35" y="15" width={30} height={30} />
 
             {shapeList}

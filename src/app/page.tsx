@@ -16,22 +16,22 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <>
-      <main className="flex flex-col px-[10rem]">
+      <main className="flex flex-col px-44">
         <Banner
           eventName="Crimson Alley"
           eventText="Join me in Manchester Square from Dec 7, 14 to see my works"
-          showBanner={true}
+          showBanner={false}
         />
-        <div className="flex gap-x-[15rem] items-center mb-64">
-          <div className="border-1 border-secondary-color p-10 w-1/4 flex-initial">
-            I am a Canadian scratchboard artist from Edmonton, Alberta. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Praesent placerat dui non urna
-            scelerisque, sed mattis tortor cursus.
+        <div className="flex gap-x-36 mb-10 ml-20">
+          <div className="border-1 border-secondary-color p-10 w-1/3 flex-initial place-self-center text-lg">
+            <p className="mb-3">Welcome! I am a Canadian scratchboard artist from Edmonton, Alberta.</p>
+            <p>Explore the site, visit my gallery, and follow my Instagram for peeks behind the scenes</p>
           </div>
           <LandingImage />
-
         </div>
-        <hr className="border-secondary-color" />
+        <p className="w-3/4 self-center">Through the scratchboard medium, I use hyperrealism to recreate photos in an attempt to draw attention to the tiny scratches that make up the world around us. This constant texture breakdown, analysis, and reconstruction is what drives me to keep growing. With every single piece, I always have this new, intimate understanding of each texture, no matter how familiar I was at the start.</p>
+
+        <hr className="border-secondary-color mt-32" />
         <GenericCTA
           title="Head To Gallery"
           description="My collection of works thus far, showcasing the different subjects I
