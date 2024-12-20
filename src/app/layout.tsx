@@ -6,16 +6,6 @@ import "@/styles/globals.css";
 import { Providers } from "./providers";
 import Header from "@/components/header";
 
-const geistSans = localFont({
-  src: "../../public/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../../public/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 const latinModernMono = localFont({
   src: "../../public/fonts/lmmono10-regular.otf",
   variable: "--font-lmmono",
@@ -38,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${kolkerBrush.variable} ${latinModernMono.variable} font-lmmono bg-primary-gray flex flex-col min-h-lvh`}
+        className={`${kolkerBrush.variable} ${latinModernMono.variable} font-lmmono bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(0,0,0,0.80)_0%,rgba(255,255,255,0.00)_100%)] flex flex-col min-h-lvh`}
       >
         <Providers>
           {" "}

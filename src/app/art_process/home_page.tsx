@@ -32,7 +32,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
                     {/* What is scratchboard sidebar */}
                     <div className="sticky top-10 col-span-1 h-screen mt-8 flex justify-center">
                         <div className="border-1 border-secondary-color p-7 space-y-4 text-base w-[60%] h-max">
-                            <p className="text-lg text-secondary-color">What is Scratchboard</p>
+                            <p className="text-lg text-secondary-color">What is Scratchboard?</p>
                             <p>Scratchboard a board formed of hard backing, white kaolin clay, and black india ink on top.</p>
                             <p>You can use all sorts of sharp tools to scratch away at the ink and produce different textures.</p>
                             <p>Hobby precision knives, microblading needles, tattoo needles, and fibreglass brushes are some examples of tools I use in my works.</p>
@@ -42,12 +42,15 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
                     {/* Scrolling content */}
                     <div className="col-span-2 flex flex-col items-center">
 
-                        <h1 className="text-xl">Art Process</h1>
+                        <h1 className="text-2xl mt-5">Art Process</h1>
                         <hr className="w-full my-5" />
-                        <div className="grid grid-cols-2 grid-rows-1 mb-24">
+                        <span className="mb-3">Welcome! Here you'll find short form videos of how I work as well as any interesting textures I come across and how I tackle them.</span>
+                        {Boolean(videos.length == 0) && (<span className="h-[40%] flex place-items-center">No videos yet! Uploads will happen every month or two so check back for updates :)</span>)}
+                        {Boolean(videos.length !== 0) && (<div className="grid grid-cols-2 grid-rows-1 mb-24">
 
                             <div
                                 className="flex flex-col">
+
                                 {firstColumn.map((item: VideoAsset | string) => {
 
                                     if (typeof item === 'string') {
@@ -90,12 +93,12 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
                                     }
                                 })}
                             </div>
-                        </div>
+                        </div>)}
                     </div>
                     {/* Timeline sidebar */}
                     <div className="sticky top-10 col-span-1 h-screen flex justify-center mt-8">
 
-                        <Timeline />
+                        <Timeline showDates={false} />
                     </div>
                 </div>
             </main>

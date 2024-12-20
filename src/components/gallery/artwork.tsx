@@ -41,7 +41,7 @@ export function Artwork({
         placeholder="blur"
         blurDataURL={resource.blurDataUrl}
       />
-      <div className="grid grid-cols-2 grid-rows-2 w-full h-20 bg-[#151517] pt-3 px-4 grid-flow-col">
+      <div className="grid grid-cols-2 grid-rows-2 w-full h-20 bg-black pt-3 px-4 grid-flow-col">
         <p className="text-lg justify-self-start">{resource.context.caption}</p>
         <p className=" text-sm justify-self-start">{resource.context.alt}</p>
         <div

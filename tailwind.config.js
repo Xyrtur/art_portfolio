@@ -20,7 +20,7 @@ export const theme = {
       lmmono: ["var(--font-lmmono)"],
     },
     colors: {
-      "link-color": "#F4F7BE",
+      "link-color": "#E8D2B4",
       "secondary-color": "#FAB3A9",
       "primary-gray": "#252527",
       "accent-gray": "#3F3F44",

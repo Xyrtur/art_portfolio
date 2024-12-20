@@ -14,9 +14,8 @@ export function Banner({
   return (
     <Link
       href="/"
-      className={`flex place-self-center bg-banner-color rounded-2xl space-x-2 text-black items-center py-1 px-8 mb-10 ${
-        showBanner ? "visible" : "invisible"
-      }`}
+      className={`flex place-self-center bg-banner-color rounded-2xl space-x-2 text-black items-center py-1 px-8 mb-10 -translate-y-5 ${showBanner ? "visible" : "invisible"
+        }`}
     >
       <p className="">{eventName} </p>
       <p className="text-3xl mb-3">.</p>

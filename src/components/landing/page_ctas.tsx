@@ -19,8 +19,8 @@ export function GenericCTA({
     <Link
       href={link}
       className={`group flex flex-col ml-[8%] ${isGalleryCTA
-        ? "mb-10 mt-[5rem]"
-        : "border-1 border-white p-8 w-1/2 my-8 ml-[11rem]"
+        ? "mb-16 mt-20"
+        : "border-1 border-white p-8 w-1/2 my-16 ml-[11rem] hover:border-secondary-color"
         } `}
     >
       <div

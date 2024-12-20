@@ -59,7 +59,7 @@ export default function GalleryPage({ artworks }:
                         currentArtworkId={artworkId}
                     />
                 )}
-                <h1 className="text-3xl text-center">Scratchboard Gallery</h1>
+                <h1 className="text-3xl text-center mt-5">Scratchboard Gallery</h1>
                 <hr className="w-2/3 my-5" />
                 <div className="grid grid-cols-2 grid-rows-1 w-[65%] mb-24">
                     <div

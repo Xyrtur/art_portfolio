@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
-    // const muxClient = new Mux({
-    //     tokenId: process.env.MUX_TOKEN_ID,
-    //     tokenSecret: process.env.MUX_TOKEN_SECRET
-    // });
+    const muxClient = new Mux({
+        tokenId: process.env.MUX_TOKEN_ID,
+        tokenSecret: process.env.MUX_TOKEN_SECRET
+    });
 
-    // const videos = await muxClient.video.assets.list();
+    const videos = await muxClient.video.assets.list();
 
-    // console.log(videos);
+    console.log(videos);
     return <ArtProcessPage videos={[]} />;
 }
