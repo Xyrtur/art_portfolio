@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kolkerBrush.variable} ${latinModernMono.variable} font-lmmono bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(0,0,0,0.80)_0%,rgba(255,255,255,0.00)_100%)] flex flex-col min-h-lvh h-screen overflow-scroll`}
+        className={`${kolkerBrush.variable} ${latinModernMono.variable} font-lmmono bg-[radial-gradient(100.40%_40.55%_at_180.76%_-20.29%,rgba(0,0,0,0.40)_0%,rgba(255,255,255,0.10)_400%)] flex flex-col min-h-lvh`}
       >
         <Providers>
           {" "}

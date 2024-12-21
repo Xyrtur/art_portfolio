@@ -5,8 +5,20 @@ import { Timeline } from '@/components/timeline';
 import { ToTopButton } from '@/components/to_top_button';
 import Video from 'next-video';
 import { PlaybackID } from '@mux/mux-node/resources/shared.mjs';
+import { useEffect } from 'react';
 
 export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
+
+    useEffect(() => {
+        document.body.classList.add("h-screen");
+        document.body.classList.add("overflow-scroll");
+        // unmount action
+        return () => {
+            document.body.classList.remove('h-screen');
+            document.body.classList.remove('overflow-scroll');
+        }
+    });
+
 
     const firstColumn: (VideoAsset | string)[] = [];
     const secondColumn: (VideoAsset | string)[] = [];
