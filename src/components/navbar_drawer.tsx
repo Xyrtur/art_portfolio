@@ -26,7 +26,7 @@ export function NavbarDrawer() {
                     <motion.div initial={{ opacity: 0, x: '100%' }} animate={{ opacity: 1, x: '0' }} exit={{ x: '100%', opacity: 0 }} transition={{ duration: 0.5 }} className="absolute right-0 top-20 h-min w-min bg-black flex flex-row justify-between drop-shadow-lg rounded-lg ">
                         <div className="flex flex-col p-4">
                             {navNameList.map((_, index: number) => {
-                                return (<Link className="py-2 px-4" href={navLinkList[index]}>
+                                return (<Link key={navLinkList[index]} className="py-2 px-4" href={navLinkList[index]}>
                                     {navNameList[index]}
                                 </Link>);
                             })}
