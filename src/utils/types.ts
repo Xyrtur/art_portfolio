@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 
+import { PlaybackID } from "@mux/mux-node/resources/index.mjs";
+
 export interface SharedModalProps {
     index: number;
     artworks: CloudinaryImage[];
@@ -27,7 +29,7 @@ export interface CloudinaryImage {
 }
 
 export interface VideoAsset {
-    id: string;
+    playback_ids?: PlaybackID[] | undefined;
     created_at: string;
-    passthrough: string | undefined;
+    passthrough?: string | undefined;
 }

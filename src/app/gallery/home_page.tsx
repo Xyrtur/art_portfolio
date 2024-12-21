@@ -3,7 +3,7 @@
 import { ToTopButton } from "@/components/to_top_button";
 import { Artwork } from "@/components/gallery/artwork";
 import { CloudinaryImage } from "utils/types";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Modal from "@/components/gallery/modal";
 import { createGlobalState } from "react-hooks-global-state";
@@ -11,7 +11,7 @@ import { createGlobalState } from "react-hooks-global-state";
 const initialState: { photoToScrollTo: number | null } = { photoToScrollTo: null };
 export const { useGlobalState, setGlobalState } = createGlobalState(initialState);
 
-export default function GalleryPage({ artworks }:
+function SuspenseItAll({ artworks }:
     { artworks: CloudinaryImage[] }) {
 
     const firstColumn = [];
@@ -49,53 +49,63 @@ export default function GalleryPage({ artworks }:
         }
     }, [artworkId, lastViewedPhoto, setLastViewedPhoto]);
 
+    return (
+        <main className="flex flex-col items-center">
+            {Boolean(artworkId != 0) && (
+                <Modal
+                    artworks={artworks}
+                    currentArtworkId={artworkId}
+                />
+            )}
+            <h1 className="text-3xl text-center mt-5">Scratchboard Gallery</h1>
+            <hr className="w-2/3 my-5" />
+            <div className="grid grid-cols-2 grid-rows-1 w-[65%] mb-24">
+                <div
+                    className="flex flex-col space-y-20 items-center"
+                >
+                    {firstColumn.map((resource: CloudinaryImage) => {
+                        return (
+                            <Artwork
+                                key={resource.public_id}
+                                lastViewedPhoto={Number(lastViewedPhoto)}
+                                lastViewedPhotoRef={lastViewedPhotoRef}
+                                resource={resource} />
+
+                        );
+                    })}
+
+                </div>
+                <div
+                    className="flex flex-col space-y-20 items-center"
+                >
+                    {secondColumn.map((resource: CloudinaryImage) => {
+                        return (
+                            <Artwork
+                                key={resource.public_id}
+                                lastViewedPhoto={Number(lastViewedPhoto)}
+                                lastViewedPhotoRef={lastViewedPhotoRef}
+                                resource={resource} />
+
+                        );
+                    })}
+
+                </div>
+            </div>
+
+            <ToTopButton />
+        </main>
+    );
+
+}
+
+export default function GalleryPage({ artworks }:
+    { artworks: CloudinaryImage[] }) {
 
     return (
         <>
-            <main className="flex flex-col items-center">
-                {Boolean(artworkId != 0) && (
-                    <Modal
-                        artworks={artworks}
-                        currentArtworkId={artworkId}
-                    />
-                )}
-                <h1 className="text-3xl text-center mt-5">Scratchboard Gallery</h1>
-                <hr className="w-2/3 my-5" />
-                <div className="grid grid-cols-2 grid-rows-1 w-[65%] mb-24">
-                    <div
-                        className="flex flex-col space-y-20 items-center"
-                    >
-                        {firstColumn.map((resource: CloudinaryImage) => {
-                            return (
-                                <Artwork
-                                    key={resource.public_id}
-                                    lastViewedPhoto={Number(lastViewedPhoto)}
-                                    lastViewedPhotoRef={lastViewedPhotoRef}
-                                    resource={resource} />
-
-                            );
-                        })}
-
-                    </div>
-                    <div
-                        className="flex flex-col space-y-20 items-center"
-                    >
-                        {secondColumn.map((resource: CloudinaryImage) => {
-                            return (
-                                <Artwork
-                                    key={resource.public_id}
-                                    lastViewedPhoto={Number(lastViewedPhoto)}
-                                    lastViewedPhotoRef={lastViewedPhotoRef}
-                                    resource={resource} />
-
-                            );
-                        })}
-
-                    </div>
-                </div>
-
-                <ToTopButton />
-            </main>
+            <Suspense>
+                <SuspenseItAll artworks={artworks} />
+            </Suspense>
             <footer>
                 <p className="w-full text-[0.9rem] text-center pb-8 pt-3">
                     Copyright Ysabelle Kmieć ©2024. All Rights Reserved.

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import ArtProcessPage from "./home_page";
 import Mux from '@mux/mux-node'
+import { VideoAsset } from "utils/types";
 
 export const revalidate = 300; // seconds
 
@@ -15,8 +16,6 @@ export default async function Page() {
         tokenSecret: process.env.MUX_TOKEN_SECRET
     });
 
-    const videos = await muxClient.video.assets.list();
-
-    console.log(videos);
-    return <ArtProcessPage videos={[]} />;
+    const { data }: { data: VideoAsset[] } = (await muxClient.video.assets.list());
+    return <ArtProcessPage videos={data} />;
 }

@@ -1,7 +1,7 @@
 /** @format */
 
 import { getPlaiceholder } from "plaiceholder";
-import { CloudinaryImage } from "../../utils/types";
+import { CloudinaryImage } from "../utils/types";
 
 const cache = new Map<CloudinaryImage, string>();
 
