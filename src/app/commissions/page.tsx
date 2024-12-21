@@ -3,7 +3,6 @@
 import { CommissionExample } from "@/components/commission_example";
 import Footer from "@/components/footer";
 import { Metadata } from "next";
-import { CldImage } from "next-cloudinary";
 import Link from "next/link";
 
 export const revalidate = 300; // seconds

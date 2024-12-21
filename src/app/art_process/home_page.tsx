@@ -5,16 +5,16 @@ import { Timeline } from '@/components/timeline';
 import { ToTopButton } from '@/components/to_top_button';
 import Video from 'next-video';
 
-function isVideoContext(item: VideoAsset | string): item is VideoAsset {
-    return (item as VideoAsset).id !== undefined;
-}
+// function isVideoContext(item: VideoAsset | string): item is VideoAsset {
+//     return (item as VideoAsset).id !== undefined;
+// }
 
 export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
-    var firstColumn: (VideoAsset | string)[] = [];
-    var secondColumn: (VideoAsset | string)[] = [];
+    const firstColumn: (VideoAsset | string)[] = [];
+    const secondColumn: (VideoAsset | string)[] = [];
 
-    for (var i = 0; i < videos.length; i++) {
+    for (let i = 0; i < videos.length; i++) {
         if (i % 2 == 0) {
             firstColumn.push(videos[i]);
             secondColumn.push(videos[i].passthrough ? String(videos[i].passthrough) : "");
@@ -44,7 +44,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
                         <h1 className="text-2xl mt-5">Art Process</h1>
                         <hr className="w-full my-5" />
-                        <span className="mb-3">Welcome! Here you'll find short form videos of how I work as well as any interesting textures I come across and how I tackle them.</span>
+                        <span className="mb-3">Welcome! Here you&#39;ll find short form videos of how I work as well as any interesting textures I come across and how I tackle them.</span>
                         {Boolean(videos.length == 0) && (<span className="h-[40%] flex place-items-center">No videos yet! Uploads will happen every month or two so check back for updates :)</span>)}
                         {Boolean(videos.length !== 0) && (<div className="grid grid-cols-2 grid-rows-1 mb-24">
 

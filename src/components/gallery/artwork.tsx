@@ -4,6 +4,7 @@
 
 import { CldImage } from "next-cloudinary";
 import { CloudinaryImage } from "../../utils/types";
+import { LegacyRef, RefObject } from "react";
 
 export function Artwork({
   resource,
@@ -12,14 +13,14 @@ export function Artwork({
 }: {
   resource: CloudinaryImage;
   lastViewedPhoto: number;
-  lastViewedPhotoRef: any;
+  lastViewedPhotoRef: LegacyRef<HTMLDivElement> | RefObject<HTMLAnchorElement>;
 }) {
   return (
     <div
       key={resource.order}
       ref={
         Number(resource.context.order) === Number(lastViewedPhoto)
-          ? lastViewedPhotoRef
+          ? (lastViewedPhotoRef as LegacyRef<HTMLDivElement>)
           : null
       }
       className={`cursor-zoom-in h-min ${resource.width > resource.height ? "w-[90%]" : "w-[70%]"

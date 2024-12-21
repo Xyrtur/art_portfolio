@@ -27,7 +27,7 @@ export default function AboutTheArtistPage() {
         </div>
         <div className="flex flex-col w-1/2">
           <h1 className="text-3xl text-secondary-color pb-10 mt-5">About The Artist</h1>
-          <p className="text-lg -translate-x-5 w-full mb-12 bg-secondary-color/25 p-5 text-white">"The goal I work towards is having the ability to close my eyes and envision my subject or surroundings on a scratchboard."</p>
+          <p className="text-lg -translate-x-5 w-full mb-12 bg-secondary-color/25 p-5 text-white">&#34;The goal I work towards is having the ability to close my eyes and envision my subject or surroundings on a scratchboard.&#34;</p>
 
           <p className="w-[90%] mb-10">Born and raised in Edmonton, Alberta, I have been working with scratchboard  for the past 5 years. I was first introduced to this medium in highschool and my love for cats fueled my first few pieces. It felt natural for me to work with this medium and I have thoroughly enjoyed slowly introducing myself to new textures other than fur. Growing up near the Rockies, I have always loved the mountains and I am currently branching out into more landscapes, hoping to capture the beauty of the national parks and mountains around me. My dream is to become a full-time scratchboard artist later on in life.</p>
           <p className="w-[90%]">This website is as much for you as it is a personal journal for myself. I created a rough timeline for myself to track my progress.  Feel free to check back in throughout the years as I grow! </p>

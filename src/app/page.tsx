@@ -5,7 +5,6 @@ import { Banner } from "@/components/landing/banner";
 import { LandingImage } from "@/components/landing/landing_image";
 import { GenericCTA } from "@/components/landing/page_ctas";
 import { Metadata } from "next";
-import { CldImage } from "next-cloudinary";
 
 export const revalidate = 300; // seconds
 

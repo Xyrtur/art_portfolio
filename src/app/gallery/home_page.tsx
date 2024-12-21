@@ -3,7 +3,7 @@
 import { ToTopButton } from "@/components/to_top_button";
 import { Artwork } from "@/components/gallery/artwork";
 import { CloudinaryImage } from "utils/types";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import Modal from "@/components/gallery/modal";
 import { createGlobalState } from "react-hooks-global-state";
@@ -14,17 +14,17 @@ export const { useGlobalState, setGlobalState } = createGlobalState(initialState
 export default function GalleryPage({ artworks }:
     { artworks: CloudinaryImage[] }) {
 
-    var firstColumn = [];
-    var secondColumn = [];
-    var height1 = 0;
-    var height2 = 0;
+    const firstColumn = [];
+    const secondColumn = [];
+    let height1 = 0;
+    let height2 = 0;
     firstColumn.push(artworks[0]);
     secondColumn.push(artworks[1]);
     height2 += +artworks[1].context.height_in;
     height1 += +artworks[0].context.height_in;
 
 
-    for (var j = 2; j < artworks.length; j++) {
+    for (let j = 2; j < artworks.length; j++) {
 
         if (height1 < height2) {
             firstColumn.push(artworks[j]);

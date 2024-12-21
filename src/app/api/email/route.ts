@@ -50,8 +50,8 @@ export async function POST(request: NextRequest) {
           });
           return NextResponse.json({ message: "Email sent" });
 
-        } catch (error: any) {
-          return NextResponse.json({ error: error.message || 'Something went wrong' }, { status: 500 });
+        } catch (error: unknown) {
+          return NextResponse.json({ error: (error as Error).message || 'Something went wrong' }, { status: 500 });
         }
 
       } else {
