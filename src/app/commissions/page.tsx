@@ -6,6 +6,8 @@ import { Metadata } from "next";
 import { CldImage } from "next-cloudinary";
 import Link from "next/link";
 
+export const revalidate = 300; // seconds
+
 export const metadata: Metadata = {
   title: 'Commissions - Ysabelle Kmieć',
   description: 'Learn more about her commissions pricing and details'

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import ArtProcessPage from "./home_page";
 import Mux from '@mux/mux-node'
 
+export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
     title: "Art Process - Ysabelle Kmieć",

@@ -6,6 +6,8 @@ import { Metadata } from "next";
 import { ContactForm } from "@/components/contact/contact_form";
 import CaptchaProvider from "@/components/contact/captcha_provider";
 
+export const revalidate = 300; // seconds
+
 export const metadata: Metadata = {
   title: 'Contact - Ysabelle Kmieć',
   description: 'Get in touch with Ysabelle Kmieć'

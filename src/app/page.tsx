@@ -7,6 +7,7 @@ import { GenericCTA } from "@/components/landing/page_ctas";
 import { Metadata } from "next";
 import { CldImage } from "next-cloudinary";
 
+export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
   title: 'Ysabelle Kmieć',

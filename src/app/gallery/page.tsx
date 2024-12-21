@@ -12,6 +12,9 @@ cloudinary.config({
   api_key: process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
+
+export const revalidate = 300; // seconds
+
 async function fetchArtworks() {
   const { resources }: { resources: CloudinaryImage[] } =
     await cloudinary.search
