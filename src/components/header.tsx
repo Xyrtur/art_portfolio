@@ -21,7 +21,7 @@ const Header = () => {
         <p className="font-kolker_brush text-7xl text-white pl-6 pr-3">
           Ysabelle
         </p>
-        <p className="font-kolker_brush text-7xl/6 text-white pl-16">Kmiec</p>
+        <p className="font-kolker_brush text-7xl/6 text-white pl-16">Kmieć</p>
       </Link>
       <div className="mr-8 flex flex-row items-center space-x-16 mb-14">
         <NavItem hrefName="gallery" name="Gallery" />

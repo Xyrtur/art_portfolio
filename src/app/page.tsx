@@ -9,7 +9,7 @@ import { CldImage } from "next-cloudinary";
 
 
 export const metadata: Metadata = {
-  title: 'Ysabelle Kmiec',
+  title: 'Ysabelle Kmieć',
   description: 'Explore scratchboard and the artist'
 }
 

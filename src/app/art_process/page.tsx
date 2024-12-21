@@ -4,7 +4,7 @@ import Mux from '@mux/mux-node'
 
 
 export const metadata: Metadata = {
-    title: "Art Process - Ysabelle Kmiec",
+    title: "Art Process - Ysabelle Kmieć",
     description: "See it be",
 };
 

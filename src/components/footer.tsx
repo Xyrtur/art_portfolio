@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         <hr className="bg-white h-0.5 border-none mt-8 place-self-center w-5/6 " />
         <p className="text-center pb-8 pt-3">
-          Copyright Ysabelle Kmiec ©2024. All Rights Reserved.
+          Copyright Ysabelle Kmieć ©2024. All Rights Reserved.
         </p>
       </div>
     </footer>

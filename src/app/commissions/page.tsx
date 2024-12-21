@@ -7,7 +7,7 @@ import { CldImage } from "next-cloudinary";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Commissions - Ysabelle Kmiec',
+  title: 'Commissions - Ysabelle Kmieć',
   description: 'Learn more about her commissions pricing and details'
 }
 

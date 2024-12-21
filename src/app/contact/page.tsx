@@ -7,8 +7,8 @@ import { ContactForm } from "@/components/contact/contact_form";
 import CaptchaProvider from "@/components/contact/captcha_provider";
 
 export const metadata: Metadata = {
-  title: 'Contact - Ysabelle Kmiec',
-  description: 'Get in touch with Ysabelle Kmiec'
+  title: 'Contact - Ysabelle Kmieć',
+  description: 'Get in touch with Ysabelle Kmieć'
 }
 
 export default function ContactPage() {
@@ -18,7 +18,7 @@ export default function ContactPage() {
       <main className="flex flex-row space-x-44 ml-[10%] mr-[15%]">
         <div className="flex flex-col items-center text-sm space-y-2">
           <ProfilePicture />
-          <p>Ysabelle Kmiec</p>
+          <p>Ysabelle Kmieć</p>
           <p>Edmonton, Alberta, Canada</p>
           <p>(587)-590-5467</p>
           <div className="relative text-base w-3/4">

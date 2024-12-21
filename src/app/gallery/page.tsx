@@ -33,7 +33,7 @@ async function fetchArtworks() {
 }
 
 export const metadata: Metadata = {
-  title: "Gallery - Ysabelle Kmiec",
+  title: "Gallery - Ysabelle Kmieć",
   description: "View her original works",
 };
 

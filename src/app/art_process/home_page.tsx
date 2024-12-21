@@ -101,7 +101,13 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
                         <Timeline showDates={false} />
                     </div>
                 </div>
+                <ToTopButton />
             </main>
+            <footer>
+                <p className="w-full text-[0.9rem] text-center pb-8 pt-3">
+                    Copyright Ysabelle Kmieć ©2024. All Rights Reserved.
+                </p>
+            </footer>
         </>
     );
 }

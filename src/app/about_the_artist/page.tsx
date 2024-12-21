@@ -6,7 +6,7 @@ import { Timeline } from "@/components/timeline";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'About The Artist - Ysabelle Kmiec',
+  title: 'About The Artist - Ysabelle ',
   description: 'Biography'
 }
 
