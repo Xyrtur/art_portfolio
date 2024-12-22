@@ -14,14 +14,15 @@ export function Banner({
   return (
     <Link
       href="/"
-      className={`flex place-self-center bg-banner-color rounded-lg space-x-2 text-black items-center px-8 mb-10 -translate-y-5 ${showBanner ? "visible" : "invisible"
-        }`}
+      className={`flex place-self-center bg-banner-color max-md:w-full md:rounded-sm space-x-2 text-black items-center px-8 max-sm:py-3 mb-10 ${
+        showBanner ? "visible" : "invisible"
+      }`}
     >
-      <p className="">{eventName} </p>
+      <p className="text-center">{eventName} </p>
       <p className="text-3xl mb-3">.</p>
       <p className="">{eventText}</p>
       <svg
-        className="h-6 w-6 text-black"
+        className="max-w-6 max-h-6 min-w-6 min-h-6 text-black"
         width="24"
         height="24"
         viewBox="0 0 24 24"

@@ -9,29 +9,42 @@ import { Metadata } from "next";
 export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
-  title: 'Ysabelle Kmieć',
-  description: 'Explore scratchboard and the artist'
-}
+  title: "Ysabelle Kmieć",
+  description: "Explore scratchboard and the artist",
+};
 
 export default function LandingPage() {
   return (
     <>
-      <main className="flex flex-col px-44">
+      <main className="flex flex-col xl:px-24 2xl:px-44">
         <Banner
           eventName="Crimson Alley"
           eventText="Join me in Manchester Square from Dec 7, 14 to see my works"
-          showBanner={false}
+          showBanner={true}
         />
-        <div className="flex gap-x-36 mb-10 ml-20">
-          <div className="border-1 border-secondary-color p-10 w-1/3 flex-initial place-self-center text-lg">
-            <p className="mb-3">Welcome! I am a Canadian scratchboard artist from Edmonton, Alberta.</p>
-            <p>Explore the site, visit my gallery, and follow my Instagram for peeks behind the scenes</p>
-          </div>
+        <div className="flex flex-col lg:pl-16 2xl:pl-0 lg:flex-row-reverse lg:gap-x-5 2xl:max-[1800px]:gap-x-24 min-[1800px]:gap-x-36 mb-10">
           <LandingImage />
+          <div className="border-1 border-secondary-color p-5 sm:p-10 w-5/6 md:w-2/3 2xl:max-[1800px]:w-1/2 min-[1800px]:w-1/3 max-lg:mt-5 flex-initial place-self-center text-lg">
+            <p className="mb-3">
+              Welcome! I am a Canadian scratchboard artist from Edmonton,
+              Alberta.
+            </p>
+            <p>
+              Explore the site, visit my gallery, and follow my Instagram for
+              peeks behind the scenes
+            </p>
+          </div>
         </div>
-        <p className="w-3/4 self-center">Through the scratchboard medium, I use hyperrealism to recreate photos in an attempt to draw attention to the tiny scratches that make up the world around us. This constant texture breakdown, analysis, and reconstruction is what drives me to keep growing. With every single piece, I always have this new, intimate understanding of each texture, no matter how familiar I was at the start.</p>
+        <p className="w-3/4 self-center">
+          Through the scratchboard medium, I use hyperrealism to recreate photos
+          in an attempt to draw attention to the tiny scratches that make up the
+          world around us. This constant texture breakdown, analysis, and
+          reconstruction is what drives me to keep growing. With every single
+          piece, I always have this new, intimate understanding of each texture,
+          no matter how familiar I was at the start.
+        </p>
 
-        <hr className="border-secondary-color mt-32" />
+        <hr className="border-secondary-color mt-16 sm:mt-32 mx-10 sm-max-xl:mx-16" />
         <GenericCTA
           title="Head To Gallery"
           description="My collection of works thus far, showcasing the different subjects I

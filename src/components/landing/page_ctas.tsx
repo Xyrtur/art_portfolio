@@ -1,4 +1,6 @@
-"use client"
+/** @format */
+
+"use client";
 /** @format */
 
 import { CldImage } from "next-cloudinary";
@@ -18,15 +20,18 @@ export function GenericCTA({
   return (
     <Link
       href={link}
-      className={`group flex flex-col ml-[8%] ${isGalleryCTA
-        ? "mb-16 mt-20"
-        : "border-1 border-white p-8 w-1/2 my-16 ml-[11rem] hover:border-secondary-color"
-        } `}
+      className={`group flex flex-col mx-[8%] ${
+        isGalleryCTA
+          ? "mb-8 2xl:mb-16 mt-8 md:mt-20"
+          : "border-1 border-white p-8 max-[520px]:w-5/6 w-3/4 lg:w-2/3 2xl:w-1/2 my-8 2xl:my-16 min-[520px]:mx-20  xl:ml-44 hover:border-secondary-color"
+      } `}
     >
       <div
-        className={`flex flex-row space-x-8 items-center ${isGalleryCTA ? "visible" : "collapse"
-          }`}
-      ><div className="w-1/4">
+        className={`grid grid-rows-2 grid-cols-2 sm:flex sm:flex-row gap-x-8 items-center ${
+          isGalleryCTA ? "visible" : "collapse"
+        }`}
+      >
+        <div className="sm:w-1/4">
           <CldImage
             aspectRatio={1.27226}
             width={2000 / 5}
@@ -35,8 +40,9 @@ export function GenericCTA({
             alt="14&#34; x 11&#34;, 2024"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGMICwsrLi6+fuOGhaUlg7yCwvr1a1+8esHAwMAgJy934OC+/MJ8FTU1ADZxDwqQLp/1AAAAAElFTkSuQmCC"
-
-          /></div><div className="w-1/4">
+          />
+        </div>
+        <div className="sm:w-1/4">
           <CldImage
             className=""
             aspectRatio={1}
@@ -46,8 +52,9 @@ export function GenericCTA({
             alt="12&#34; x 12&#34;, 2024"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVR4nAE0AMv/AAcHBCgoJ2pqaRQUEAAyMi+Li4r6+vo7OzoAe3t7iIiIlZWVhYWFAGRkY5ycnJOTk+7v77hAFauJXt7bAAAAAElFTkSuQmCC"
-
-          /></div><div className="">
+          />
+        </div>
+        <div className="sm:w-1/4">
           <CldImage
             aspectRatio={0.75}
             width={1536 / 5}
@@ -56,8 +63,9 @@ export function GenericCTA({
             alt="9&#34; x 12&#34;, 2024"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAALUlEQVR4nAXBQQEAAAQEwQugiBYXQxXP/aopCDPaXaC7NTN3Bygiqsq2ANuZ+YyjEGCUTs4kAAAAAElFTkSuQmCC"
-
-          /></div><div className="w-1/4 ">
+          />
+        </div>
+        <div className="sm:w-1/4">
           <CldImage
             aspectRatio={1}
             width={2048 / 5}
@@ -66,18 +74,21 @@ export function GenericCTA({
             alt="8&#34; x 8&#34;, 2024"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAP0lEQVR4nAE0AMv/AKCgoJSUlFBQUAEBAQBfX1/Ly8v6+vpFRUUAjo6Or6+v7u7ueXl5AFNTUyQkJGpqaufn53kHGQ9zZ7QhAAAAAElFTkSuQmCC"
-
-          /></div>
+          />
+        </div>
       </div>
       <div className="flex flex-row items-center">
         <p
-          className={`text-2xl group-hover:text-secondary-color ${isGalleryCTA ? "pl-20" : ""
-            }`}
+          className={`text-2xl group-hover:text-secondary-color ${
+            isGalleryCTA ? "max-lg:pt-5 pl-20" : ""
+          }`}
         >
           {title}
         </p>
         <svg
-          className="h-6 w-10 text-white transition ease-in-out duration-300 group-hover:translate-x-2"
+          className={`h-6 w-10 ${
+            isGalleryCTA ? "max-lg:mt-5" : ""
+          } text-white transition ease-in-out duration-300 group-hover:translate-x-2`}
           width="30"
           height="24"
           viewBox="0 0 30 24"
@@ -95,8 +106,9 @@ export function GenericCTA({
         </svg>
       </div>
       <p
-        className={`${isGalleryCTA ? "pl-28" : "pl-8"} pt-3 ${description == undefined ? "collapse" : ""
-          }`}
+        className={`${isGalleryCTA ? "pl-28" : "pl-8"} pt-3 ${
+          description == undefined ? "collapse" : ""
+        }`}
       >
         {description}
       </p>
