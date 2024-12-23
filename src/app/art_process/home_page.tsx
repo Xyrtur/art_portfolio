@@ -9,8 +9,6 @@ import { useEffect, useState } from 'react';
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
-import MuxVideo from '@mux/mux-video-react';
-import MediaThemeInstaplay from 'player.style/instaplay/react';
 
 export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
