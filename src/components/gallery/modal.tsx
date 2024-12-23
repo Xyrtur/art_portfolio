@@ -14,7 +14,6 @@ import {
 } from "@heroicons/react/24/outline";
 import { AnimatePresence, motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
-import { useSwipeable } from "react-swipeable";
 import { variants } from "./animations";
 import { CldImage } from "next-cloudinary";
 
@@ -64,20 +63,6 @@ export default function Modal({
 
   const [loaded, setLoaded] = useState(false);
 
-  const handlers = useSwipeable({
-    onSwipedRight: () => {
-      if (index < artworks.length) {
-        changeArtworkId(index + 1);
-      }
-    },
-    onSwipedLeft: () => {
-      if (index > 1) {
-        changeArtworkId(index - 1);
-      }
-    },
-    trackMouse: true,
-  });
-
   // The order stored in cloudinary starts from oldest (0) to newest,
   // which is opposite of how the artwworks are shown on the site (newest to oldest)
   const reversedArtworks = [...artworks].reverse();
@@ -95,7 +80,7 @@ export default function Modal({
       "max-xl:bottom-0 max-xl:translate-y-full max-xl:text-center max-xl:w-full max-xl:p-3 xl:right-0 xl:translate-x-full xl:p-5";
   } else if (currentPhoto.aspect_ratio < 1) {
     modalImagePadding =
-      "pt-20 px-10 pb-36 sm:pb-24 sm:px-16 md:pt-8 md:pb-36 md:px-24";
+      "pt-20 px-10 pb-56 sm:pb-24 sm:px-16 md:pt-8 md:pb-36 md:px-24";
     textPlacement =
       "max-lg:bottom-0 max-lg:translate-y-full max-lg:text-center max-lg:w-full max-lg:p-3 lg:right-0 lg:translate-x-full lg:p-5";
   } else {
@@ -115,7 +100,7 @@ export default function Modal({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 bg-black/20 backdrop-filter backdrop-blur-md"
+        className="fixed inset-0 bg-black/20 backdrop-filter backdrop-blur-md overflow-hidden"
       />
 
       <MotionConfig
@@ -125,7 +110,7 @@ export default function Modal({
         }}
       >
         <div className="fixed inset-x-0 bottom-0 z-40 overflow-hidden bg-gradient-to-b from-black/0 to-black/40 h-36" />
-        <div className="relative z-50 flex w-full" {...handlers}>
+        <div className="relative z-50 flex w-full">
           <div className="fixed inset-0 w-full" onClick={() => handleClose()} />
 
           {/* Main image */}
