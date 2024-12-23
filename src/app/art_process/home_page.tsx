@@ -12,9 +12,7 @@ import { useMediaQuery } from 'react-responsive';
 
 export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
-    const [isExpanded, setExpanded] = useState(false);
-
-
+    const [isExpanded, setExpanded] = useState(true);
 
     useEffect(() => {
 
