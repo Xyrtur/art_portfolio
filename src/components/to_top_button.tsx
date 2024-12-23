@@ -33,14 +33,14 @@ export function ToTopButton() {
 
   return (
     <button
-      className={`fixed bottom-8 right-8 h-12 w-12 rounded-full bg-white z-10 shadow-lg ${
+      className={`fixed bottom-4 right-4 lg:bottom-8 lg:right-8 h-9 w-9 lg:h-12 lg:w-12 rounded-full bg-white z-10 shadow-lg ${
         isVisible ? "visible" : "invisible"
       }`}
       data-cy="return_to_top_button"
       onClick={scrollToTop}
     >
       <svg
-        className="h-8 w-8 text-black"
+        className="w-6 h-6 lg:h-8 lg:w-8 text-black"
         viewBox="-5.5 0 24 24"
         fill="none"
         stroke="currentColor"

@@ -23,8 +23,9 @@ export function Artwork({
           ? (lastViewedPhotoRef as LegacyRef<HTMLDivElement>)
           : null
       }
-      className={`cursor-zoom-in h-min ${resource.width > resource.height ? "w-[90%]" : "w-[70%]"
-        }`}
+      className={`cursor-zoom-in h-min ${
+        resource.width > resource.height ? "w-[90%]" : "w-[70%]"
+      }`}
       onClick={() => {
         window.history.pushState(
           null,
@@ -42,12 +43,17 @@ export function Artwork({
         placeholder="blur"
         blurDataURL={resource.blurDataUrl}
       />
-      <div className="grid grid-cols-2 grid-rows-2 w-full h-20 bg-black pt-3 px-4 grid-flow-col">
-        <p className="text-lg justify-self-start">{resource.context.caption}</p>
-        <p className=" text-sm justify-self-start">{resource.context.alt}</p>
+      <div className="grid grid-cols-3 grid-rows-2 w-full h-14 md:h-16 xl:h-20 bg-black pt-2 xl:pt-3 px-4 grid-flow-col">
+        <p className="text-base lg:text-lg justify-self-start col-span-2">
+          {resource.context.caption}
+        </p>
+        <p className="text-sm justify-self-start col-span-2">
+          {resource.context.alt}
+        </p>
         <div
-          className={`justify-self-end self-center row-span-2 rounded-full bg-red-500 h-6 w-6 ${resource.context.isSold == "true" ? "visible" : "collapse"
-            }`}
+          className={`justify-self-end self-center row-span-2 rounded-full bg-red-500 h-6 w-6 ${
+            resource.context.isSold == "true" ? "visible" : "collapse"
+          }`}
         />
       </div>
     </div>
