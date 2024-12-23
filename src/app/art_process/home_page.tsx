@@ -16,6 +16,8 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
     const [isExpanded, setExpanded] = useState(false);
 
+
+
     useEffect(() => {
 
         document.body.classList.add("h-screen");
@@ -26,6 +28,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
             document.body.classList.remove('overflow-scroll');
         }
     });
+
 
     const firstColumn: (VideoAsset | string)[] = [];
     const secondColumn: (VideoAsset | string)[] = [];
@@ -46,25 +49,17 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
     for (let i = 0; i < videos.length; i++) {
         singleVideoColumn.push(<div key={(videos[i].playback_ids as PlaybackID[])[0].id} className="md:pb-10 self-center">
-            <MediaThemeInstaplay
-                style={{ "--media-primary-color": "#000000", "--media-secondary-color": "#FAB3A9", "--media-accent-color": "#EAC435" }}>
-                <MuxVideo
-                    slot="media"
-                    playbackId={`${(videos[i].playback_ids as PlaybackID[])[0].id}`}
-                    width={isMinMd ? 315 : 276}
-                    height={isMinMd ? 560 : 490.6}
-                    className="lg:h-full"
-                    playsInline
-                ></MuxVideo>
-            </MediaThemeInstaplay>
+            <Video src={`https://stream.mux.com/${(videos[i].playback_ids as PlaybackID[])[0].id}.m3u8`} accentColor="#FAB3A9" width={isMinMd ? 315 : 276} height={isMinMd ? 560 : 490.6} className="lg:h-full" />
         </div>);
         const [title, date, desc] = videos[i].passthrough!.split(';');
 
-        singleVideoColumn.push(<div key={videos[i].passthrough} className="mt-3 md:mt-10 max-md:mb-10 max-sm:text-center w-3/4">
+        singleVideoColumn.push(<div key={videos[i].passthrough} className="mt-3 md:mt-10 max-md:mb-10 max-md:text-center w-3/4">
             <p className="text-sm">{date}</p><p>{title}</p>
             <p className="mt-5">{desc}</p>
 
         </div>);
+
+
     }
 
     function WhatIsScratchboard({ isMainContent = false }: { isMainContent?: boolean }) {
@@ -112,18 +107,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
                     } else {
                         return (
                             <div key={(item.playback_ids as PlaybackID[])[0].id} className="pb-10 self-center">
-                                <MediaThemeInstaplay
-                                    style={{ "--media-primary-color": "#000000", "--media-secondary-color": "#FAB3A9", "--media-accent-color": "#EAC435" }}>
-                                    <MuxVideo
-                                        slot="media"
-                                        playbackId={`${(item.playback_ids as PlaybackID[])[0].id}`}
-                                        width={315}
-                                        height={560}
-                                        className="lg:h-full"
-                                        playsInline
-                                    ></MuxVideo>
-                                </MediaThemeInstaplay>
-
+                                <Video src={`https://stream.mux.com/${(item.playback_ids as PlaybackID[])[0].id}.m3u8`} accentColor="#FAB3A9" width={315} height={560} className="lg:h-full" />
                             </div>
 
                         );
@@ -150,17 +134,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
                     } else {
                         return (
                             <div key={(item.playback_ids as PlaybackID[])[0].id} className="pb-10 self-center">
-                                <MediaThemeInstaplay
-                                    style={{ "--media-primary-color": "#000000", "--media-secondary-color": "#FAB3A9", "--media-accent-color": "#EAC435" }}>
-                                    <MuxVideo
-                                        slot="media"
-                                        playbackId={`${(item.playback_ids as PlaybackID[])[0].id}`}
-                                        width={315}
-                                        height={560}
-                                        className="lg:h-full"
-                                        playsInline
-                                    ></MuxVideo>
-                                </MediaThemeInstaplay>
+                                <Video src={`https://stream.mux.com/${(item.playback_ids as PlaybackID[])[0].id}.m3u8`} accentColor="#FAB3A9" width={315} height={560} className="lg:h-full" />
                             </div>
 
 
