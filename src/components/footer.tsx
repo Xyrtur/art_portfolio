@@ -6,7 +6,7 @@ function FooterLink({ hrefName, name }: { hrefName: string; name: string }) {
   return (
     <Link
       href={hrefName}
-      className="hover:text-link-color hover:underline px-6 pb-1 md:pb-3 max-sm:col-span-2 lg:self-center"
+      className="hover:text-link-color hover:underline px-6 pb-2 md:pb-3 max-sm:col-span-2 lg:self-center"
       target={name == "Instagram" ? "_blank" : undefined}
     >
       {name}
@@ -43,7 +43,7 @@ const LargeFooter = () => {
 }
 
 const SmallFooter = () => {
-  return (<div className="w-3/4 grid grid-cols-2 space-x-8 grid-flow-col lg:hidden place-self-center">
+  return (<div className="w-3/4 grid grid-cols-2 space-x-8 grid-flow-col lg:hidden leading-tight place-self-center">
     <div className="flex flex-col w-full">
       <p className=" pb-3 ">Browse</p>
       <hr className=" bg-white h-0.5 border-none  mb-3 mr-3 " />
@@ -66,7 +66,7 @@ const SmallFooter = () => {
 
 const Footer = () => {
   return (
-    <footer className="w-full text-[0.9rem] mt-[10rem]">
+    <footer className="w-full text-[0.9rem] mt-28 sm:mt-40">
       <div className="flex flex-col justify-center">
         <SmallFooter />
         <LargeFooter />

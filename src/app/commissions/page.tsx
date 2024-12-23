@@ -19,32 +19,26 @@ export default function CommissionsPage() {
         <h1 className="text-xl sm:text-2xl xl:text-3xl text-center mt-5">
           Commission Your Scratchboard
         </h1>
-        <div className="grid grid-cols-2 w-2/3 mx-24 mt-14">
+        <div className="flex flex-col max-sm:items-center sm:grid sm:grid-cols-[max-content_1fr] w-5/6 lg:w-3/4 2xl:w-2/3 lg:mx-24 mt-4 sm:mt-14">
           <CommissionExample />
-          <div className="relative col-start-2 pl-10">
-            <div className="absolute top-10 border-1 border-secondary-color p-14 white-space: pre-line space-y-10 h-min mr-[15%]">
-              <p>
-                Want a pet portrait? Have another idea? I can create a unique
-                and detailed scratchboard of your concept.
-              </p>
-              <p>
-                Scratchboards make great gifts for those close to you. As of
-                right now, I am currently not including color.
-              </p>
-            </div>
-            <div className="absolute bottom-5 border-1 border-secondary-color p-14 white-space: pre-line h-min ml-24">
-              Photos are essential, please ensure they are good quality. What to
-              look for in a good picture
-            </div>
+
+          <div className="relative col-start-2 md:max-lg:w-3/4 lg:top-10 border-1 border-secondary-color p-10 space-y-5 sm:space-y-10 h-min 2xl:mr-[15%] sm:ml-[15%]">
+            <p>
+              Scratchboards of loved ones can make great gifts for those close to you. I pour as much detail and care as I can into every piece that I work on.
+            </p>
+            <p>
+              I am currently open to doing pets, people, and landscape features.
+            </p>
+            <div className="max-md:hidden absolute top-0 left-0 -translate-y-[5%] translate-x-[5%] xl:translate-x-[2%] bg-secondary-color/30 h-[105%] w-[105%] 2xl:w-[107%]" />
           </div>
         </div>
 
-        <div className="relative grid grid-cols-2  gap-x-8 w-2/3">
-          <div className="text-xl text-center mt-8 ">
+        <div className="relative flex flex-col max-lg:items-center lg:grid lg:grid-cols-[max-content_1fr] xl:grid-cols-2 lg:grid-rows-[max-content_1fr] gap-x-14 xl:gap-x-8 lg:w-3/4 xl:w-2/3">
+          <div className="text-xl text-center mt-8 w-full">
             <p>Base Pricing</p>
-            <hr className="mt-3 mx-[25%] border-secondary-color" />
+            <hr className="mt-3 mx-[25%] mb-8 border-secondary-color" />
           </div>
-          <div className="col-start-1 columns-2 gap-10 space-y-2 justify-self-center">
+          <div className="lg:col-start-1 lg:columns-2 max-lg:columns-2 w-80 text-[0.9rem] sm:text-base sm:max-lg:w-96 gap-10 space-y-2 justify-self-center">
             <p>5” X 7” – $400</p>
             <p>8” X 10” – $500</p>
             <p>9” X 12” – $600</p>
@@ -55,7 +49,7 @@ export default function CommissionsPage() {
             <p>18” X 24” – $1,350</p>
             <p>24” X 36” – $2,700</p>
           </div>
-          <div className="col-start-2 row-start-1 row-span-2 ml-8 mt-10 space-y-4">
+          <div className="text-[0.9rem] sm:text-base leading-relaxed sm:leading-normal lg:col-start-2 lg:row-start-1 lg:row-span-2 max-lg:mx-[10%] lg:ml-8 mt-10 space-y-4">
             <p>
               Pricing can vary on factors such as subject complexity and is
               based on a rough estimate in hours.
@@ -72,9 +66,9 @@ export default function CommissionsPage() {
               compared to common pets such as dogs, cats and birds.
             </p>
           </div>
-          <hr className="w-full col-span-2 my-10 border-secondary-color" />
+          <hr className="w-[90%] lg:w-full col-span-2 my-5 md:my-10 border-secondary-color" />
 
-          <p className="col-span-2 w-full">
+          <p className="col-span-2 w-[90%] lg:w-full">
             If you are interested, please use my phone number or the contact
             form here to get in touch with me so we can further discuss your
             idea and the process. Once the process and layout are agreed upon, I
