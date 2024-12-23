@@ -2,12 +2,26 @@
 
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 export function NavbarDrawer() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (!ref.current?.contains(event.target as Node)) {
+        setDrawerOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [ref]);
 
   const navNameList: string[] = [
     "Gallery",
@@ -25,6 +39,7 @@ export function NavbarDrawer() {
   ];
 
   return (
+
     <div className="sm:hidden">
       <button
         type="button"
@@ -38,9 +53,10 @@ export function NavbarDrawer() {
         <span className="sr-only">Open main menu</span>
         <Bars3Icon className="w-8 h-8" />
       </button>
-      <AnimatePresence>
+      <AnimatePresence >
         {isDrawerOpen && (
           <motion.div
+            ref={ref}
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: "0" }}
             exit={{ x: "100%", opacity: 0 }}
@@ -52,6 +68,7 @@ export function NavbarDrawer() {
                 return (
                   <Link
                     key={navLinkList[index]}
+                    onClick={() => { setDrawerOpen(false) }}
                     className="py-2 px-4"
                     href={navLinkList[index]}
                   >
