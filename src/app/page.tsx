@@ -20,7 +20,7 @@ export default function LandingPage() {
         <Banner
           eventName="Crimson Alley"
           eventText="Join me in Manchester Square from Dec 7, 14 to see my works"
-          showBanner={true}
+          showBanner={false}
         />
         <div className="flex flex-col lg:pl-16 2xl:pl-0 lg:flex-row-reverse lg:gap-x-5 2xl:max-[1800px]:gap-x-24 min-[1800px]:gap-x-36 mb-10">
           <LandingImage />
