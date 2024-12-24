@@ -67,7 +67,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
                 }
             }} className={`${isMainContent ? "min-[1250px]:hidden w-full" : "max-[1250px]:hidden sticky top-10 col-span-1 h-screen w-64"} mt-8 flex 2xl:w-full justify-self-center 2xl:justify-center`}>
-                <motion.div initial={false} animate={isMainContent ? (isExpanded ? "h-max" : (isSmolScreen ? "h-20" : "h-10")) : false} transition={{ duration: 0.5 }} className={`${isMainContent ? `px-7 pb-5 pt-2` : " h-max p-7"} overflow-y-hidden border-1 border-secondary-color max-[1250px]:rounded-md min-[1250px]:space-y-4 text-base w-full 2xl:w-[60%]`}>
+                <motion.div initial={isMainContent ? { height: isSmolScreen ? 80 : 40 } : false} animate={isMainContent ? { height: isExpanded ? "auto" : (isSmolScreen ? 80 : 40) } : false} transition={{ duration: 0.5 }} className={`${isMainContent ? `px-7 pb-5 pt-2` : " h-max p-7"} overflow-y-hidden border-1 border-secondary-color max-[1250px]:rounded-md min-[1250px]:space-y-4 text-base w-full 2xl:w-[60%]`}>
                     <div className="flex flex-row justify-between "><p className={`${isMainContent ? "pr-8" : ""} place-self-center text-lg text-secondary-color`}>What is Scratchboard?</p>{isMainContent && (<ChevronDownIcon strokeWidth={2} className="w-4 h-4 place-self-center text-secondary-color" />)}</div>
 
                     <p className="pt-2">Scratchboard is formed of hard backing, white kaolin clay, and black india ink on top.</p>

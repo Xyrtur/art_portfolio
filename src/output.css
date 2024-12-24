@@ -992,10 +992,6 @@ video {
   margin-left: 1.25rem;
 }
 
-.ml-\[10\%\] {
-  margin-left: 10%;
-}
-
 .ml-\[15\%\] {
   margin-left: 15%;
 }
@@ -1006,10 +1002,6 @@ video {
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.mr-\[10\%\] {
-  margin-right: 10%;
 }
 
 .mr-\[15\%\] {
@@ -1034,6 +1026,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mt-28 {
@@ -1231,10 +1227,6 @@ video {
   height: 2px;
 }
 
-.h-\[40\%\] {
-  height: 40%;
-}
-
 .h-\[80\%\] {
   height: 80%;
 }
@@ -1354,12 +1346,12 @@ video {
   min-height: 32px;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .min-h-lvh {
   min-height: 100lvh;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-1 {
@@ -8778,6 +8770,11 @@ a {
     margin-right: 1.5rem;
   }
 
+  .sm\:mx-\[10\%\] {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   .sm\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -8791,16 +8788,6 @@ a {
   .sm\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-  }
-
-  .sm\:mx-\[15\%\] {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-
-  .sm\:mx-\[10\%\] {
-    margin-left: 10%;
-    margin-right: 10%;
   }
 
   .sm\:ml-\[15\%\] {
@@ -9357,11 +9344,6 @@ a {
 @media (min-width: 1280px) {
   .xl\:right-0 {
     right: 0px;
-  }
-
-  .xl\:mx-\[15\%\] {
-    margin-left: 15%;
-    margin-right: 15%;
   }
 
   .xl\:mx-\[10\%\] {
