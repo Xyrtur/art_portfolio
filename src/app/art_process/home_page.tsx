@@ -12,7 +12,7 @@ import { useMediaQuery } from 'react-responsive';
 
 export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
-    const [isExpanded, setExpanded] = useState(true);
+    const [isExpanded, setExpanded] = useState(false);
 
     useEffect(() => {
 
@@ -67,7 +67,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
                 }
             }} className={`${isMainContent ? "min-[1250px]:hidden w-full" : "max-[1250px]:hidden sticky top-10 col-span-1 h-screen w-64"} mt-8 flex 2xl:w-full justify-self-center 2xl:justify-center`}>
-                <motion.div initial={isMainContent ? { height: isExpanded ? "100%" : isSmolScreen ? 80 : 40 } : false} animate={isMainContent ? { height: !isExpanded ? "100%" : isSmolScreen ? 80 : 40 } : false} transition={{ duration: 0.5 }} className={`${isMainContent ? "px-7 pb-5 pt-2" : "p-7"} overflow-y-hidden border-1 border-secondary-color max-[1250px]:rounded-md min-[1250px]:space-y-4 text-base w-full 2xl:w-[60%] h-max`}>
+                <motion.div initial={false} animate={isMainContent ? (isExpanded ? "h-max" : (isSmolScreen ? "h-20" : "h-10")) : false} transition={{ duration: 0.5 }} className={`${isMainContent ? `px-7 pb-5 pt-2` : " h-max p-7"} overflow-y-hidden border-1 border-secondary-color max-[1250px]:rounded-md min-[1250px]:space-y-4 text-base w-full 2xl:w-[60%]`}>
                     <div className="flex flex-row justify-between "><p className={`${isMainContent ? "pr-8" : ""} place-self-center text-lg text-secondary-color`}>What is Scratchboard?</p>{isMainContent && (<ChevronDownIcon strokeWidth={2} className="w-4 h-4 place-self-center text-secondary-color" />)}</div>
 
                     <p className="pt-2">Scratchboard is formed of hard backing, white kaolin clay, and black india ink on top.</p>
@@ -150,12 +150,12 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
                     {/* Scrolling content */}
                     <div className="col-span-2 flex flex-col items-center 2xl:mr-0 ml-[15%] mr-[15%] min-[1250px]:ml-0 ">
-                        <main className="min-h-full">
+                        <main className="min-h-screen">
                             <WhatIsScratchboard isMainContent={true} />
                             <h1 className="text-2xl mt-5">Art Process</h1>
                             <hr className="w-full mt-5 mb-3" />
                             <span className="mb-3 ">Welcome! Here you&#39;ll find short form videos of how I work as well as any interesting textures I come across and how I tackle them.</span>
-                            {Boolean(videos.length == 0) && (<span className="h-[40%] flex place-items-center">No videos yet! Uploads will happen every month or two so check back for updates :)</span>)}
+                            {Boolean(videos.length == 0) && (<span className="mt-24 flex place-items-center">No videos yet! Uploads will happen every month or two so check back for updates :)</span>)}
                             {Boolean(videos.length !== 0) && (
                                 <SingleColumn />
                             )}
