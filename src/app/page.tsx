@@ -10,7 +10,7 @@ export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
   title: "Ysabelle Kmieć",
-  description: "Explore scratchboard and the artist",
+  description: "Welcome to my scratchboard art portfolio. Visit my gallery, commissions or contact me using my form.",
 };
 
 export default function LandingPage() {

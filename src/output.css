@@ -2891,6 +2891,10 @@ video {
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
 }
 
+.bg-\[linear-gradient\(rgba\(0\2c 0\2c 0\2c 0\.8\)\2c rgba\(0\2c 0\2c 0\2c 0\.6\)\)\2c url\(\'\/scratches\.png\'\)\] {
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url('/scratches.png');
+}
+
 .from-black\/0 {
   --tw-gradient-from: rgb(0 0 0 / 0) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
@@ -5626,6 +5630,10 @@ a {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:outline-secondary-color:focus {
+  outline-color: #FAB3A9;
 }
 
 .focus\:ring-secondary-color:focus {

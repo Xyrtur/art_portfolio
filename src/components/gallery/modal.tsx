@@ -161,15 +161,14 @@ export default function Modal({
                     className={`absolute bottom-5 left-5 space-x-3 md:bottom-10 md:left-10 lg:space-x-5 flex flex-row items-center justify-start self-end pointer-events-auto cursor-pointer`}
                   >
                     <button
-                      className="rounded-full bg-white/80 p-3 text-black/75 backdrop-blur-lg transition hover:bg-white hover:text-black focus:outline-none"
+                      className="rounded-full bg-white/80 p-3 text-black/75 backdrop-blur-lg transition hover:bg-white hover:text-black"
                       style={{ transform: "translate3d(0, 0, 0)" }}
                     >
                       <ChevronLeftIcon className="h-4 lg:h-6 w-4 lg:w-6" />
                     </button>
                     <div
-                      className={`max-lg:hidden ${
-                        leftPhoto.width > leftPhoto.height ? "w-32" : "w-24"
-                      }`}
+                      className={`max-lg:hidden ${leftPhoto.width > leftPhoto.height ? "w-32" : "w-24"
+                        }`}
                     >
                       <CldImage
                         src={leftPhoto.secure_url}
@@ -193,9 +192,8 @@ export default function Modal({
                   >
                     <p className="text-end">{rightPhoto.context.caption}</p>
                     <div
-                      className={`max-lg:hidden ${
-                        rightPhoto.width > rightPhoto.height ? "w-32" : "w-24"
-                      }`}
+                      className={`max-lg:hidden ${rightPhoto.width > rightPhoto.height ? "w-32" : "w-24"
+                        }`}
                     >
                       <CldImage
                         src={rightPhoto.secure_url}
@@ -210,7 +208,7 @@ export default function Modal({
                       />
                     </div>
                     <button
-                      className="rounded-full bg-white/80 p-3 text-black/75 backdrop-blur-lg transition hover:bg-white hover:text-black focus:outline-none"
+                      className="rounded-full bg-white/80 p-3 text-black/75 backdrop-blur-lg transition hover:bg-white hover:text-black"
                       style={{ transform: "translate3d(0, 0, 0)" }}
                     >
                       <ChevronRightIcon className="h-4 lg:h-6 w-4 lg:w-6" />

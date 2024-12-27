@@ -22,7 +22,7 @@ const LargeFooter = () => {
         <li>587-590-5467</li>
         <li>Edmonton, Alberta, Canada</li>
       </ol>
-      <p className="col-span-2 pb-3 ">Browes</p>
+      <p className="col-span-2 pb-3 ">Browse</p>
       <hr className=" bg-white h-0.5 border-none col-span-2 mb-3 mr-3 " />
       <FooterLink hrefName="gallery" name="Gallery" />
       <FooterLink hrefName="commissions" name="Commissions" />

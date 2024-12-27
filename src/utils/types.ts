@@ -19,7 +19,6 @@ export interface Context {
 }
 export interface CloudinaryImage {
     public_id: string;
-    order: string;
     secure_url: string;
     width: number;
     height: number;

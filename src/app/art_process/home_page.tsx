@@ -61,20 +61,25 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
     function WhatIsScratchboard({ isMainContent = false }: { isMainContent?: boolean }) {
         {/* What is scratchboard sidebar */ }
         return (
-            <aside onClick={() => {
-                if (isMainContent) {
-                    setExpanded((currentState) => !currentState);
+            isMainContent ?
+                <button onClick={() =>
+                    setExpanded((currentState) => !currentState)} className="min-[1250px]:hidden w-full text-start mt-8 flex 2xl:w-full justify-self-center 2xl:justify-center">
+                    <motion.div initial={{ height: isSmolScreen ? 80 : 40 }} animate={{ height: isExpanded ? "auto" : (isSmolScreen ? 80 : 40) }} transition={{ duration: 0.5 }} className="px-7 pb-5 pt-2 overflow-y-hidden border-1 border-secondary-color max-[1250px]:rounded-md min-[1250px]:space-y-4 text-base w-full 2xl:w-[60%]">
+                        <div className="flex flex-row justify-between "><p className="pr-8 place-self-center text-lg text-secondary-color">What is Scratchboard?</p><ChevronDownIcon strokeWidth={2} className="w-4 h-4 place-self-center text-secondary-color" /></div>
 
-                }
-            }} className={`${isMainContent ? "min-[1250px]:hidden w-full" : "max-[1250px]:hidden sticky top-10 col-span-1 h-screen w-64"} mt-8 flex 2xl:w-full justify-self-center 2xl:justify-center`}>
-                <motion.div initial={isMainContent ? { height: isSmolScreen ? 80 : 40 } : false} animate={isMainContent ? { height: isExpanded ? "auto" : (isSmolScreen ? 80 : 40) } : false} transition={{ duration: 0.5 }} className={`${isMainContent ? `px-7 pb-5 pt-2` : " h-max p-7"} overflow-y-hidden border-1 border-secondary-color max-[1250px]:rounded-md min-[1250px]:space-y-4 text-base w-full 2xl:w-[60%]`}>
-                    <div className="flex flex-row justify-between "><p className={`${isMainContent ? "pr-8" : ""} place-self-center text-lg text-secondary-color`}>What is Scratchboard?</p>{isMainContent && (<ChevronDownIcon strokeWidth={2} className="w-4 h-4 place-self-center text-secondary-color" />)}</div>
+                        <p className="pt-2">Scratchboard is formed of hard backing, white kaolin clay, and black india ink on top.</p>
+                        <p>You can use all sorts of sharp tools to scratch away at the ink and produce different textures.</p>
+                        <p>Hobby precision knives, microblading needles, tattoo needles, and fibreglass brushes are some examples of tools I use in my works.</p>
+                    </motion.div>
+                </button> : <aside className="max-[1250px]:hidden sticky top-10 col-span-1 h-screen w-64 text-start mt-8 flex 2xl:w-full justify-self-center 2xl:justify-center">
+                    <div className="h-max p-7 overflow-y-hidden border-1 border-secondary-color max-[1250px]:rounded-md min-[1250px]:space-y-4 text-base w-full 2xl:w-[60%]">
+                        <div className="flex flex-row justify-between "><p className="place-self-center text-lg text-secondary-color">What is Scratchboard?</p></div>
 
-                    <p className="pt-2">Scratchboard is formed of hard backing, white kaolin clay, and black india ink on top.</p>
-                    <p>You can use all sorts of sharp tools to scratch away at the ink and produce different textures.</p>
-                    <p>Hobby precision knives, microblading needles, tattoo needles, and fibreglass brushes are some examples of tools I use in my works.</p>
-                </motion.div>
-            </aside>);
+                        <p className="pt-2">Scratchboard is formed of hard backing, white kaolin clay, and black india ink on top.</p>
+                        <p>You can use all sorts of sharp tools to scratch away at the ink and produce different textures.</p>
+                        <p>Hobby precision knives, microblading needles, tattoo needles, and fibreglass brushes are some examples of tools I use in my works.</p>
+                    </div>
+                </aside>);
     }
 
     const SingleColumn = () => {

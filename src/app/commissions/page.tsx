@@ -35,7 +35,7 @@ export default function CommissionsPage() {
 
         <div className="relative flex flex-col max-lg:items-center lg:grid lg:grid-cols-[max-content_1fr] xl:grid-cols-2 lg:grid-rows-[max-content_1fr] gap-x-14 xl:gap-x-8 lg:w-3/4 xl:w-2/3">
           <div className="text-xl text-center mt-8 w-full">
-            <p>Base Pricing</p>
+            <h2>Base Pricing</h2>
             <hr className="mt-3 mx-[25%] mb-8 border-secondary-color" />
           </div>
           <div className="lg:col-start-1 lg:columns-2 max-lg:columns-2 w-80 text-[0.9rem] sm:text-base sm:max-lg:w-96 gap-10 space-y-2 justify-self-center">

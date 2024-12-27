@@ -6,6 +6,7 @@ import { NavbarDrawer } from "./navbar_drawer";
 function NavItem({ hrefName, name }: { hrefName: string; name: string }) {
   return (
     <Link
+      tabIndex={1}
       href={hrefName}
       className="hover:text-link-color hover:underline"
     >
@@ -16,8 +17,8 @@ function NavItem({ hrefName, name }: { hrefName: string; name: string }) {
 
 const Header = () => {
   return (
-    <div className=" grid grid-rows-1 grid-flow-col p-4 sm:p-8 justify-between text-white bg-[80%] bg-no-repeat bg-[linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url('https://res.cloudinary.com/dsdaz0tnz/image/upload/v1734678243/scratchespink_mp3daq.png')] ">
-      <Link href="/" className="font-kolker_brush text-7xl">
+    <div className=" grid grid-rows-1 grid-flow-col p-4 sm:p-8 justify-between text-white bg-[80%] bg-no-repeat bg-[linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url('/scratches.png')] ">
+      <Link tabIndex={1} href="/" className="font-kolker_brush text-7xl">
         <p className="pl-3 sm:pl-6 pr-20">
           Ysabelle
         </p>
@@ -30,7 +31,7 @@ const Header = () => {
         <NavItem hrefName="art_process" name="Art Process" />
         <NavItem hrefName="about_the_artist" name="About The Artist" />
         <NavItem hrefName="contact" name="Contact Me" />
-        <Link href="https://www.instagram.com/scraped_art.yzzy/" target="_blank">
+        <Link tabIndex={1} href="https://www.instagram.com/scraped_art.yzzy/" target="_blank">
           <svg className="w-6 h-6 hover:text-link-color" width="24" strokeWidth="2"
             stroke="currentColor"
             fill="currentColor"
