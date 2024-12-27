@@ -37,7 +37,7 @@ export function Artwork({
       }}
     >
       <CldImage
-        priority
+        priority={Number(resource.context.order) > 5 ? true : false}
         src={resource.secure_url}
         alt={resource.context.alt}
         placeholder="blur"
