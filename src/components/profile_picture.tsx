@@ -9,9 +9,6 @@ export function ProfilePicture() {
       <div className="w-44 h-44 lg:w-56 lg:h-56 bg-slate-500 rounded-full overflow-hidden">
         <CldImage
           alt={"Profile picture"}
-          width={393}
-          height={500}
-          aspectRatio={0.786}
           src={
             "https://res.cloudinary.com/dsdaz0tnz/image/upload/v1733721839/Mimi_portrait_x2ibcs.jpg"
           }

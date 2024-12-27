@@ -137,9 +137,7 @@ export default function Modal({
                 >
                   <CldImage
                     src={currentPhoto.secure_url}
-                    width={currentPhoto.width}
-                    height={currentPhoto.height}
-                    aspectRatio={currentPhoto.aspect_ratio}
+
                     priority
                     alt={currentPhoto.context.alt}
                     placeholder="blur"
@@ -172,9 +170,7 @@ export default function Modal({
                     >
                       <CldImage
                         src={leftPhoto.secure_url}
-                        width={leftPhoto.width / 10}
-                        height={leftPhoto.height / 10}
-                        aspectRatio={leftPhoto.aspect_ratio}
+
                         priority
                         alt={leftPhoto.context.alt}
                         placeholder="blur"
@@ -197,9 +193,7 @@ export default function Modal({
                     >
                       <CldImage
                         src={rightPhoto.secure_url}
-                        width={rightPhoto.width / 10}
-                        height={rightPhoto.height / 10}
-                        aspectRatio={rightPhoto.aspect_ratio}
+
                         priority
                         alt={rightPhoto.context.alt}
                         placeholder="blur"

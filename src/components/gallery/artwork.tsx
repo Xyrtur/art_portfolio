@@ -38,7 +38,6 @@ export function Artwork({
     >
       <CldImage
         priority
-
         src={resource.secure_url}
         alt={resource.context.alt}
         placeholder="blur"

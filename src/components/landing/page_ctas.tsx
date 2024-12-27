@@ -29,8 +29,6 @@ export function GenericCTA({
         <div className="grid grid-rows-2 grid-cols-2 sm:flex sm:flex-row gap-x-8 items-center">
           <div className="sm:w-1/4">
             <CldImage
-              width={2000 / 5}
-              height={1572 / 5}
               src="https://res.cloudinary.com/dsdaz0tnz/image/upload/v1733721840/Waterfall_z9p6oq.jpg"
               alt="Waterfall landscape, 14&#34; x 11&#34;, 2024"
               placeholder="blur"
@@ -40,9 +38,6 @@ export function GenericCTA({
           <div className="sm:w-1/4">
             <CldImage
               className=""
-              aspectRatio={1}
-              width={2048 / 5}
-              height={2048 / 5}
               src="https://res.cloudinary.com/dsdaz0tnz/image/upload/v1733721841/Polly_rqo6qd.jpg"
               alt="Polly the cat, 12&#34; x 12&#34;, 2024"
               placeholder="blur"
@@ -51,9 +46,6 @@ export function GenericCTA({
           </div>
           <div className="sm:w-1/4">
             <CldImage
-              aspectRatio={0.75}
-              width={1536 / 5}
-              height={2048 / 5}
               src="https://res.cloudinary.com/dsdaz0tnz/image/upload/v1733721842/Turtle_oxyzxw.jpg"
               alt="Turtle, 9&#34; x 12&#34;, 2024"
               placeholder="blur"
@@ -62,9 +54,6 @@ export function GenericCTA({
           </div>
           <div className="sm:w-1/4">
             <CldImage
-              aspectRatio={1}
-              width={2048 / 5}
-              height={2048 / 5}
               src="https://res.cloudinary.com/dsdaz0tnz/image/upload/v1733721840/Vinny_ubybay.jpg"
               alt="Vinny the cat, 8&#34; x 8&#34;, 2024"
               placeholder="blur"
