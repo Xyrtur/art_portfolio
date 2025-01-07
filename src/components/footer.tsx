@@ -17,26 +17,34 @@ function FooterLink({ hrefName, name }: { hrefName: string; name: string }) {
 const LargeFooter = () => {
   return (
 
-    <div className="grid grid-cols-6 gap-x-8 grid-flow-col w-2/3 place-self-center max-lg:hidden">
-      <ol className="row-span-4 col-span-2 place-self-center">
+    <div className="flex flex-row justify-between w-2/3 place-self-center max-lg:hidden">
+      <ol className="place-self-center w-1/5">
         <li>587-590-5467</li>
         <li>Edmonton, Alberta, Canada</li>
       </ol>
-      <p className="col-span-2 pb-3 ">Browse</p>
-      <hr className=" bg-white h-0.5 border-none col-span-2 mb-3 mr-3 " />
-      <FooterLink hrefName="gallery" name="Artwork Gallery" />
-      <FooterLink hrefName="commissions" name="Scratchboard Commissions" />
-      <FooterLink hrefName="art-process" name="Art Process" />
-      <FooterLink hrefName="about-the-artist" name="About The Artist" />
 
+      <div className="w-1/3">
+        <p className="w-full text-start pb-3">Browse</p>
+        <hr className="w-full  bg-white h-0.5 border-none mb-5 mr-3 " />
+        <div className="grid grid-cols-2 grid-rows-2 grid-flow-col">
 
-      <p className="col-span-2 pb-3">Contact</p>
-      <hr className="bg-white h-0.5 border-none col-span-2 mb-3 mr-3" />
-      <FooterLink hrefName="contact" name="Contact The Artist" />
-      <FooterLink
-        hrefName="https://www.instagram.com/scraped_art.yzzy/"
-        name="Instagram"
-      />
+          <FooterLink hrefName="gallery" name="Artwork Gallery" />
+          <FooterLink hrefName="commissions" name="Scratchboard Commissions" />
+          <FooterLink hrefName="art-process" name="Art Process" />
+          <FooterLink hrefName="about-the-artist" name="About The Artist" />
+        </div>
+      </div>
+      <div className="w-1/3">
+        <p className="w-full pb-3">Contact</p>
+        <hr className="bg-white h-0.5 border-none w-full mb-5 mr-3" />
+        <div className="grid grid-cols-1 grid-rows-2">
+          <FooterLink hrefName="contact" name="Contact The Artist" />
+          <FooterLink
+            hrefName="https://www.instagram.com/scraped_art.yzzy/"
+            name="Instagram"
+          />
+        </div>
+      </div>
     </div>
 
   );
