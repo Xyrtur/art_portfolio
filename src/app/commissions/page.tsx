@@ -8,7 +8,7 @@ import Link from "next/link";
 export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
-  title: "Scratchboard Art Commissions - Ysabelle Kmieć",
+  title: "Commission Scratchboard Art - Ysabelle Kmieć",
   description: "Learn more about scratchboard artwork commissions pricing and sizing. Pricing will vary given several factors like subject and background complexity.",
 };
 

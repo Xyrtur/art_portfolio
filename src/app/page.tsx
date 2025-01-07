@@ -9,7 +9,7 @@ import { Metadata } from "next";
 export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
-  title: "Scratchboard Artwork Portfolio | Ysabelle Kmieć",
+  title: "Ysabelle Kmieć | Scratchboard Artwork Portfolio",
   description: "Ysabelle Kmieć is a Canadian scratchboard artist from Edmonton, Alberta and is currently working to specialise in natural landscapes.",
 };
 
