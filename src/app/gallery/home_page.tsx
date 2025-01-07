@@ -17,8 +17,8 @@ export const { useGlobalState, setGlobalState } =
 function SuspenseItAll({ artworks }: { artworks: CloudinaryImage[] }) {
   const firstColTabIndices: number[] = [];
   const secondColTabIndices: number[] = [];
-  const firstColumn = [];
-  const secondColumn = [];
+  const firstColumn: CloudinaryImage[] = [];
+  const secondColumn: CloudinaryImage[] = [];
   let height1 = 0;
   let height2 = 0;
   firstColumn.push(artworks[0]);
@@ -56,6 +56,53 @@ function SuspenseItAll({ artworks }: { artworks: CloudinaryImage[] }) {
     }
   }, [artworkId, lastViewedPhoto, setLastViewedPhoto]);
 
+  const MobileGalleryColumn = () => {
+    return (<div className="flex flex-col space-y-20 items-center md:hidden">
+      {artworks.map((resource: CloudinaryImage, index: number) => {
+        return (
+          <Artwork
+            key={resource.public_id}
+            lastViewedPhoto={Number(lastViewedPhoto)}
+            lastViewedPhotoRef={lastViewedPhotoRef}
+            resource={resource}
+            tabIndex={index + 1}
+          />
+        );
+      })}
+    </div>);
+  }
+
+  const WebGalleryColumns = () => {
+    return (<div className="max-md:hidden grid grid-cols-subgrid col-span-2">
+      <div className="flex flex-col space-y-20 items-center">
+        {firstColumn.map((resource: CloudinaryImage, index: number) => {
+          return (
+            <Artwork
+              key={resource.public_id}
+              lastViewedPhoto={Number(lastViewedPhoto)}
+              lastViewedPhotoRef={lastViewedPhotoRef}
+              resource={resource}
+              tabIndex={firstColTabIndices[index]}
+            />
+          );
+        })}
+      </div>
+      <div className="flex flex-col max-md:mt-20 space-y-20 items-center">
+        {secondColumn.map((resource: CloudinaryImage, index: number) => {
+          return (
+            <Artwork
+              key={resource.public_id}
+              lastViewedPhoto={Number(lastViewedPhoto)}
+              lastViewedPhotoRef={lastViewedPhotoRef}
+              resource={resource}
+              tabIndex={secondColTabIndices[index]}
+            />
+          );
+        })}
+      </div>
+    </div>);
+  }
+
   return (
     <main className="flex flex-col items-center">
       {Boolean(artworkId != 0) && (
@@ -66,32 +113,8 @@ function SuspenseItAll({ artworks }: { artworks: CloudinaryImage[] }) {
       </h1>
       <hr className="w-2/3 my-3 sm:my-5" />
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 w-[90%] lg:w-[80%] xl:w-[65%] mb-24">
-        <div className="flex flex-col space-y-20 items-center">
-          {firstColumn.map((resource: CloudinaryImage, index: number) => {
-            return (
-              <Artwork
-                key={resource.public_id}
-                lastViewedPhoto={Number(lastViewedPhoto)}
-                lastViewedPhotoRef={lastViewedPhotoRef}
-                resource={resource}
-                tabIndex={firstColTabIndices[index]}
-              />
-            );
-          })}
-        </div>
-        <div className="flex flex-col max-md:mt-20 space-y-20 items-center">
-          {secondColumn.map((resource: CloudinaryImage, index: number) => {
-            return (
-              <Artwork
-                key={resource.public_id}
-                lastViewedPhoto={Number(lastViewedPhoto)}
-                lastViewedPhotoRef={lastViewedPhotoRef}
-                resource={resource}
-                tabIndex={secondColTabIndices[index]}
-              />
-            );
-          })}
-        </div>
+        <MobileGalleryColumn />
+        <WebGalleryColumns />
       </div>
 
       <ToTopButton />
