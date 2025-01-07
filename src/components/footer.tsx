@@ -26,8 +26,8 @@ const LargeFooter = () => {
       <hr className=" bg-white h-0.5 border-none col-span-2 mb-3 mr-3 " />
       <FooterLink hrefName="gallery" name="Gallery" />
       <FooterLink hrefName="commissions" name="Commissions" />
-      <FooterLink hrefName="art_process" name="Art Process" />
-      <FooterLink hrefName="about_the_artist" name="About The Artist" />
+      <FooterLink hrefName="art-process" name="Art Process" />
+      <FooterLink hrefName="about-the-artist" name="About The Artist" />
 
 
       <p className="col-span-2 pb-3">Contact</p>
@@ -49,8 +49,8 @@ const SmallFooter = () => {
       <hr className=" bg-white h-0.5 border-none  mb-3 mr-3 " />
       <FooterLink hrefName="gallery" name="Gallery" />
       <FooterLink hrefName="commissions" name="Commissions" />
-      <FooterLink hrefName="art_process" name="Art Process" />
-      <FooterLink hrefName="about_the_artist" name="About The Artist" />
+      <FooterLink hrefName="art-process" name="Art Process" />
+      <FooterLink hrefName="about-the-artist" name="About The Artist" />
     </div>
     <div className="flex flex-col w-full">
       <p className="pb-3">Contact</p>

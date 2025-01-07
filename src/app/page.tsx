@@ -61,7 +61,7 @@ export default function LandingPage() {
         <GenericCTA
           title="See The Art Process"
           description={undefined}
-          link="art_process"
+          link="art-process"
           isGalleryCTA={false}
         />
       </main>

@@ -33,8 +33,8 @@ export function NavbarDrawer() {
   const navLinkList: string[] = [
     "gallery",
     "commissions",
-    "art_process",
-    "about_the_artist",
+    "art-process",
+    "about-the-artist",
     "contact",
   ];
 
