@@ -69,7 +69,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
                         <p className="pt-2">Scratchboard is formed of hard backing, white kaolin clay, and black india ink on top.</p>
                         <p>You can use all sorts of sharp tools to scratch away at the ink and produce different textures.</p>
-                        <p>Hobby precision knives, microblading needles, tattoo needles, and fibreglass brushes are some examples of tools I use in my works.</p>
+                        <p>Hobby precision knives, microblading needles, scalpels, and fibreglass brushes are some examples of tools I use in my works.</p>
                     </motion.div>
                 </button> : <aside className="max-[1250px]:hidden sticky top-10 col-span-1 h-screen w-64 text-start mt-8 flex 2xl:w-full justify-self-center 2xl:justify-center">
                     <div className="h-max p-7 overflow-y-hidden border-1 border-secondary-color max-[1250px]:rounded-md min-[1250px]:space-y-4 text-base w-full 2xl:w-[60%]">
@@ -77,7 +77,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
                         <p className="pt-2">Scratchboard is formed of hard backing, white kaolin clay, and black india ink on top.</p>
                         <p>You can use all sorts of sharp tools to scratch away at the ink and produce different textures.</p>
-                        <p>Hobby precision knives, microblading needles, tattoo needles, and fibreglass brushes are some examples of tools I use in my works.</p>
+                        <p>Hobby precision knives, microblading needles, scalpels, and fibreglass brushes are some examples of tools I use in my works.</p>
                     </div>
                 </aside>);
     }

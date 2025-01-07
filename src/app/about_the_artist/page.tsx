@@ -22,8 +22,7 @@ export default function AboutTheArtistPage() {
           </h1>
           <ProfilePicture />
           <p className="text-lg min-[800px]:-translate-x-5 w-full mb-12  bg-secondary-color/25 p-3 max-[800px]:p-5 text-white">
-            &#34;The goal I work towards is having the ability to close my eyes
-            and envision my subject or surroundings on a scratchboard.&#34;
+            &#34;Climb rock, shoot rock, draw rock, scratch rock, be rock. Also applying to waterfalls&#34;
           </p>
 
           <p className="w-[90%] mb-10 text-[0.9rem] xl:text-base leading-loose xl:leading-normal">
@@ -73,9 +72,7 @@ export default function AboutTheArtistPage() {
               About The Artist
             </h1>
             <p className="text-lg -translate-x-5 w-full mb-12 bg-secondary-color/25 p-5 text-white">
-              &#34;The goal I work towards is having the ability to close my
-              eyes and envision my subject or surroundings on a
-              scratchboard.&#34;
+              &#34;Climb rock, shoot rock, draw rock, scratch rock, be rock. Also applying to waterfalls&#34;
             </p>
 
             <p className="w-[90%] mb-10 text-[0.9rem] xl:text-base leading-loose xl:leading-normal">

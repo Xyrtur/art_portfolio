@@ -14,11 +14,16 @@ export function Timeline({
   const goalsList: string[] = [
     "Active member of ISSA",
     "Sell at markets",
-    "Signature member of ISSA",
-    "Galleries and exhibitions",
-    "Master member of ISSA",
+    "Strathearn Art Walk",
+    "Enter ISSA Annual Exhibition",
+    "Signature member - ISSA",
+    "Complete series on mountains",
+    "Complete series on waterfalls",
+    "Be represented by a gallery",
+    "Join ASA and SAA",
+    "Master member - ISSA",
   ];
-  const datesList: string[] = ["2024", "2024", "(2026)", "(2028)", "(2034)"];
+  const datesList: string[] = ["2024", "2024", "(2025)", "(2026)", "(2026)", "(2027)", "(2029)", "(2032)", "(2033)", "(2036)"];
   let yStart = 45;
   let yEnd = 120;
   let circleCenter = 150;
@@ -51,15 +56,15 @@ export function Timeline({
         initial={
           timelineProgress[index]
             ? {
-                fill: "rgba(255,255,255,0)",
-              }
+              fill: "rgba(255,255,255,0)",
+            }
             : undefined
         }
         animate={
           timelineProgress[index]
             ? {
-                fill: "rgba(255,255,255,1)",
-              }
+              fill: "rgba(255,255,255,1)",
+            }
             : undefined
         }
         transition={
@@ -76,7 +81,7 @@ export function Timeline({
     dateTextList.push(
       <motion.p
         key={"date " + index}
-        className="text-end"
+        className="text-end min-[800px]:text-sm max-[800px]:text-base lg:text-base"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
@@ -99,14 +104,14 @@ export function Timeline({
   return (
     <div className="flex flex-row">
       {Boolean(showDates) && (
-        <div className="flex flex-col space-y-10 mt-16">{dateTextList}</div>
+        <div className="flex flex-col min-[800px]:space-y-9 max-[800px]:space-y-10 lg:space-y-10 mt-16">{dateTextList}</div>
       )}
-
+      {/* To add a new goal to timeline: add (estimate it)rem to height className and 80 to svg height*/}
       <motion.svg
-        className="h-96 w-16 text-white self-start "
+        className="min-[800px]:h-[38.5rem] max-[800px]:h-[43rem] lg:h-[43rem] w-16 text-white self-start "
         width="50"
-        height="900"
-        viewBox="25 -30 50 900"
+        height="1620"
+        viewBox="25 -30 50 1620"
         strokeWidth="4"
         stroke="currentColor"
         strokeLinecap="round"
@@ -129,9 +134,8 @@ export function Timeline({
         {shapeList}
       </motion.svg>
       <div
-        className={`flex flex-col min-[800px]:space-y-7 min-[800px]:text-sm max-[800px]:text-base max-[800px]:space-y-10 lg:space-y-10 lg:text-base ${
-          showTitle ? "" : "mt-16"
-        }`}
+        className={`flex flex-col min-[800px]:space-y-9 min-[800px]:text-sm max-[800px]:text-base max-[800px]:space-y-10 lg:space-y-10 lg:text-base ${showTitle ? "" : "mt-16"
+          }`}
       >
         {showTitle && (
           <p className="text-secondary-color text-xl text-center">Timeline</p>
