@@ -9,7 +9,7 @@ export function LandingImage() {
     <CldImage
       priority
       className="px-10 2xl:max-[1800px]:px-0 self-center md:max-lg:px-36"
-      alt={"Self portrait placeholder"}
+      alt={"Self-portrait placeholder. To be replaced."}
       height={800}
       width={1000}
       aspectRatio={1.333}

@@ -36,8 +36,8 @@ async function fetchArtworks() {
 }
 
 export const metadata: Metadata = {
-  title: "Gallery - Ysabelle Kmieć",
-  description: "View her original works",
+  title: "Scratchboard Gallery - Ysabelle Kmieć",
+  description: "Scratchboard art by Ysabelle Kmieć. The medium allows for a lot of contrast and detail to be portrayed and I hope this can be seen through my pieces.",
 };
 
 export default async function Page() {

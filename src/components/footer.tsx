@@ -74,7 +74,7 @@ const Footer = () => {
         <div className="lg:hidden mt-3 md:mt-8 text-center justify-center space-x-8 flex flex-row"><p >587-590-5467</p><p>Edmonton, Alberta, Canada</p></div>
         <hr className="bg-white h-0.5 border-none mt-3 place-self-center w-5/6 " />
         <p className="text-center pb-8 pt-3">
-          Copyright Ysabelle Kmieć ©2024. All Rights Reserved.
+          Copyright Ysabelle Kmieć ©2025. All Rights Reserved.
         </p>
       </div>
     </footer >

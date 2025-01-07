@@ -70,12 +70,12 @@ export function GenericCTA({
         </div>
       )}
       <div className="flex flex-row items-center">
-        <p
+        <h2
           className={`text-2xl group-hover:text-secondary-color ${isGalleryCTA ? "max-lg:pt-5 pl-10 sm:pl-20" : ""
             }`}
         >
           {title}
-        </p>
+        </h2>
         <svg
           className={`h-6 w-10 ${isGalleryCTA ? "max-lg:mt-5" : ""
             } text-white transition ease-in-out duration-300 group-hover:translate-x-2`}

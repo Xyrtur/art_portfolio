@@ -8,8 +8,8 @@ import { Metadata } from "next";
 export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
-  title: "About The Artist - Ysabelle ",
-  description: "Biography",
+  title: "About The Artist - Ysabelle Kmieć",
+  description: "Ysabelle Kmieć is a Canadian scratchboard artist from Edmonton, Alberta. Her passion for scratchboard fuels her work and aspirations to one day do this full-time.",
 };
 
 export default function AboutTheArtistPage() {
@@ -27,17 +27,18 @@ export default function AboutTheArtistPage() {
 
           <p className="w-[90%] mb-10 text-[0.9rem] xl:text-base leading-loose xl:leading-normal">
             Born and raised in Edmonton, Alberta, I have been working with
-            scratchboard for the past 5 years. I was first introduced to this
-            medium in highschool and my love for cats fueled my first few
-            pieces. It felt natural for me to work with this medium and I have
-            thoroughly enjoyed slowly introducing myself to new textures other
+            scratchboard for the past 3 years. I was first introduced to this
+            medium in highschool and later on revisited it in university. My love for cats
+            fueled my first few pieces back then. It felt natural for me to work with this
+            medium and I have thoroughly enjoyed slowly introducing myself to new textures other
             than fur.
           </p>
           <p className="w-[90%] mb-10 text-[0.9rem] xl:text-base leading-loose xl:leading-normal">
             Growing up near the Rockies, I have always loved the mountains and I
-            am currently branching out into more landscapes, hoping to capture
+            am currently branching out into more natural landscapes, hoping to capture
             the beauty of the national parks and mountains around me. My dream
-            is to become a full-time scratchboard artist later on in life.
+            is to become a full-time scratchboard artist later on in life. I will
+            be pursuing a fine arts degree within the next few years to help realize my dream.
           </p>
 
           <div className="border-secondary-color border-1 p-5 lg:p-8 w-full lg:w-[75%]">
@@ -77,10 +78,10 @@ export default function AboutTheArtistPage() {
 
             <p className="w-[90%] mb-10 text-[0.9rem] xl:text-base leading-loose xl:leading-normal">
               Born and raised in Edmonton, Alberta, I have been working with
-              scratchboard for the past 5 years. I was first introduced to this
-              medium in highschool and my love for cats fueled my first few
-              pieces. It felt natural for me to work with this medium and I have
-              thoroughly enjoyed slowly introducing myself to new textures other
+              scratchboard for the past 3 years. I was first introduced to this
+              medium in highschool and later on revisited it in university. My love for cats
+              fueled my first few pieces back then. It felt natural for me to work with this
+              medium and I have thoroughly enjoyed slowly introducing myself to new textures other
               than fur.
             </p>
             <p className="w-[90%] mb-10 text-[0.9rem] xl:text-base leading-loose xl:leading-normal">
@@ -88,7 +89,7 @@ export default function AboutTheArtistPage() {
               I am currently branching out into more landscapes, hoping to
               capture the beauty of the national parks and mountains around me.
               My dream is to become a full-time scratchboard artist later on in
-              life.
+              life. I will be pursuing a fine arts degree within the next few years to help realize my dream.
             </p>
             <p className="w-[90%] text-[0.9rem] xl:text-base leading-loose xl:leading-normal">
               This website is as much for you as it is a personal journal for

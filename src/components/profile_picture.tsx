@@ -10,7 +10,7 @@ export function ProfilePicture() {
         <CldImage
           className="object-cover"
           fill
-          alt={"Profile picture"}
+          alt={"Headshot picture of Ysabelle Kmieć, looking to the side with head turned."}
           src={
             "https://res.cloudinary.com/dsdaz0tnz/image/upload/v1733721839/Mimi_portrait_x2ibcs.jpg"
           }

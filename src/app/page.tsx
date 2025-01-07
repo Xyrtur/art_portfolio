@@ -9,8 +9,8 @@ import { Metadata } from "next";
 export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
-  title: "Ysabelle Kmieć",
-  description: "Welcome to my scratchboard art portfolio. Visit my gallery, commissions or contact me using my form.",
+  title: "Scratchboard Artwork Portfolio | Ysabelle Kmieć",
+  description: "Ysabelle Kmieć is a Canadian scratchboard artist from Edmonton, Alberta and is currently working to specialise in natural landscapes.",
 };
 
 export default function LandingPage() {
@@ -31,7 +31,7 @@ export default function LandingPage() {
             </p>
             <p>
               Explore the site, visit my gallery, and follow my Instagram for
-              peeks behind the scenes
+              upcoming events and works in progress.
             </p>
           </div>
         </div>

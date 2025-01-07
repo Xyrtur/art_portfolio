@@ -8,8 +8,8 @@ import Link from "next/link";
 export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
-  title: "Commissions - Ysabelle Kmieć",
-  description: "Learn more about her commissions pricing and details",
+  title: "Scratchboard Art Commissions - Ysabelle Kmieć",
+  description: "Learn more about scratchboard artwork commissions pricing and sizing. Pricing will vary given several factors like subject and background complexity.",
 };
 
 export default function CommissionsPage() {
@@ -27,7 +27,7 @@ export default function CommissionsPage() {
               Scratchboards of loved ones can make great gifts for those close to you. I pour as much detail and care as I can into every piece that I work on.
             </p>
             <p>
-              I am currently open to doing pets, people, and landscape features.
+              I am currently open to doing pets, people, and natural landscape features.
             </p>
             <div className="max-md:hidden absolute top-0 left-0 -translate-y-[5%] translate-x-[5%] xl:translate-x-[2%] bg-secondary-color/30 h-[105%] w-[105%] 2xl:w-[107%]" />
           </div>
@@ -74,7 +74,8 @@ export default function CommissionsPage() {
             idea and the process. Once the process and layout are agreed upon, I
             will send you a contract and 30% of the total price will be required
             as an initial deposit before I begin the work. Progress photos will
-            be provided once a week or as discussed.
+            be provided once a week or as discussed. You can also email me to
+            receive a copy of a commission contract.
           </p>
           <Link
             href="/contact"

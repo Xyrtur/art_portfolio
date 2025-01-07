@@ -10,7 +10,7 @@ export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
   title: "Contact - Ysabelle Kmieć",
-  description: "Get in touch with Ysabelle Kmieć",
+  description: "Get in touch with Ysabelle Kmieć. General inquiries are welcome. Thank you for visiting my website!",
 };
 
 export default function ContactPage() {
@@ -25,7 +25,7 @@ export default function ContactPage() {
           <div className="relative text-base w-full lg:w-3/4">
             <p className="mt-8">
               If you have any questions or would like to know more about my
-              process, commissions, or just want to say hi, feel free to drop me
+              process, commissions policy, or just want to say hi, feel free to drop me
               a message through this form.
             </p>
             <div className="absolute mt-8 top-0 left-0 translate-x-5 translate-y-7 w-[105%] h-[80%] md:h-[95%] bg-secondary-color/25" />
