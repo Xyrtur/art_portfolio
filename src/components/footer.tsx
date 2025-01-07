@@ -24,15 +24,15 @@ const LargeFooter = () => {
       </ol>
       <p className="col-span-2 pb-3 ">Browse</p>
       <hr className=" bg-white h-0.5 border-none col-span-2 mb-3 mr-3 " />
-      <FooterLink hrefName="gallery" name="Gallery" />
-      <FooterLink hrefName="commissions" name="Commissions" />
+      <FooterLink hrefName="gallery" name="Artwork Gallery" />
+      <FooterLink hrefName="commissions" name="Scratchboard Commissions" />
       <FooterLink hrefName="art-process" name="Art Process" />
       <FooterLink hrefName="about-the-artist" name="About The Artist" />
 
 
       <p className="col-span-2 pb-3">Contact</p>
       <hr className="bg-white h-0.5 border-none col-span-2 mb-3 mr-3" />
-      <FooterLink hrefName="contact" name="Contact Me" />
+      <FooterLink hrefName="contact" name="Contact The Artist" />
       <FooterLink
         hrefName="https://www.instagram.com/scraped_art.yzzy/"
         name="Instagram"
@@ -47,15 +47,15 @@ const SmallFooter = () => {
     <div className="flex flex-col w-full">
       <p className=" pb-3 ">Browse</p>
       <hr className=" bg-white h-0.5 border-none  mb-3 mr-3 " />
-      <FooterLink hrefName="gallery" name="Gallery" />
-      <FooterLink hrefName="commissions" name="Commissions" />
+      <FooterLink hrefName="gallery" name="Artwork Gallery" />
+      <FooterLink hrefName="commissions" name="Scratchboard Commissions" />
       <FooterLink hrefName="art-process" name="Art Process" />
       <FooterLink hrefName="about-the-artist" name="About The Artist" />
     </div>
     <div className="flex flex-col w-full">
       <p className="pb-3">Contact</p>
       <hr className="bg-white h-0.5 border-none mb-3 mr-3" />
-      <FooterLink hrefName="contact" name="Contact Me" />
+      <FooterLink hrefName="contact" name="Contact The Artist" />
       <FooterLink
         hrefName="https://www.instagram.com/scraped_art.yzzy/"
         name="Instagram"

@@ -24,7 +24,7 @@ export default function LandingPage() {
         />
         <div className="flex flex-col lg:pl-16 2xl:pl-0 lg:flex-row-reverse lg:gap-x-5 2xl:max-[1800px]:gap-x-24 min-[1800px]:gap-x-36 mb-10">
           <LandingImage />
-          <div className="border-1 border-secondary-color p-5 sm:p-10 w-5/6 md:w-2/3 2xl:max-[1800px]:w-1/2 min-[1800px]:w-1/3 max-lg:mt-5 flex-initial place-self-center text-lg">
+          <h1 className="border-1 border-secondary-color p-5 sm:p-10 w-5/6 md:w-2/3 2xl:max-[1800px]:w-1/2 min-[1800px]:w-1/3 max-lg:mt-5 flex-initial place-self-center text-lg">
             <p className="mb-3">
               Welcome! I am a Canadian scratchboard artist from Edmonton,
               Alberta.
@@ -33,7 +33,7 @@ export default function LandingPage() {
               Explore the site, visit my gallery, and follow my Instagram for
               upcoming events and works in progress.
             </p>
-          </div>
+          </h1>
         </div>
         <p className="w-3/4 self-center">
           Through the scratchboard medium, I use hyperrealism to recreate photos

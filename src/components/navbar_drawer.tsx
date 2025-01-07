@@ -24,11 +24,11 @@ export function NavbarDrawer() {
   }, [ref]);
 
   const navNameList: string[] = [
-    "Gallery",
-    "Commissions",
+    "Artwork Gallery",
+    "Scratchboard Commissions",
     "Art Process",
     "About The Artist",
-    "Contact Me",
+    "Contact The Artist",
   ];
   const navLinkList: string[] = [
     "gallery",
