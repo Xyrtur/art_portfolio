@@ -75,7 +75,7 @@ export default function Modal({
   let textPlacement = "";
   if (currentPhoto.aspect_ratio > 1) {
     modalImagePadding =
-      "pb-[27rem] px-[13rem] pt-20 min-[500px]:pb-80 min-[500px]:px-44 sm:pb-72 sm:px-80 md:pt-8 md:pb-56 md:px-44";
+      "pb-[27rem] px-[13rem] pt-20 min-[500px]:pb-80 min-[500px]:px-44 sm:pb-72 sm:px-80 lg:pt-8 md:pb-56 md:px-44";
     textPlacement =
       "max-xl:bottom-0 max-xl:translate-y-full max-xl:text-center max-xl:w-full max-xl:p-3 xl:right-0 xl:translate-x-full xl:p-5";
   } else if (currentPhoto.aspect_ratio < 1) {
@@ -133,11 +133,12 @@ export default function Modal({
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  className="absolute mx-auto"
+                  className="absolute"
                 >
                   <CldImage
                     src={currentPhoto.secure_url}
-
+                    width={2000}
+                    height={2000}
                     priority
                     alt={currentPhoto.context.alt}
                     placeholder="blur"
@@ -170,7 +171,8 @@ export default function Modal({
                     >
                       <CldImage
                         src={leftPhoto.secure_url}
-
+                        width={600}
+                        height={600}
                         priority
                         alt={leftPhoto.context.alt}
                         placeholder="blur"
@@ -193,7 +195,8 @@ export default function Modal({
                     >
                       <CldImage
                         src={rightPhoto.secure_url}
-
+                        width={600}
+                        height={600}
                         priority
                         alt={rightPhoto.context.alt}
                         placeholder="blur"
