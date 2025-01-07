@@ -932,6 +932,11 @@ video {
   margin-bottom: auto;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .-mr-2 {
   margin-right: -0.5rem;
 }

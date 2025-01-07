@@ -133,7 +133,7 @@ export default function Modal({
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  className="absolute"
+                  className="absolute mx-auto"
                 >
                   <CldImage
                     src={currentPhoto.secure_url}
