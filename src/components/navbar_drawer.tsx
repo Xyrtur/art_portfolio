@@ -25,10 +25,10 @@ export function NavbarDrawer() {
 
   const navNameList: string[] = [
     "Artwork Gallery",
-    "Scratchboard Commissions",
+    "Commissions",
     "Art Process",
     "About The Artist",
-    "Contact The Artist",
+    "Contact",
   ];
   const navLinkList: string[] = [
     "gallery",

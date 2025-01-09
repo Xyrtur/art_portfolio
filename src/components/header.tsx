@@ -27,10 +27,10 @@ const Header = () => {
       <NavbarDrawer />
       <div className="max-sm:hidden lg:mr-8 flex flex-row flex-wrap items-center justify-end sm:space-x-8 md:space-x-16 lg:mb-14 gap-y-8">
         <NavItem hrefName="gallery" name="Artwork Gallery" />
-        <NavItem hrefName="commissions" name="Scratchboard Commissions" />
+        <NavItem hrefName="commissions" name="Commissions" />
         <NavItem hrefName="art-process" name="Art Process" />
         <NavItem hrefName="about-the-artist" name="About The Artist" />
-        <NavItem hrefName="contact" name="Contact The Artist" />
+        <NavItem hrefName="contact" name="Contact" />
         <Link tabIndex={1} href="https://www.instagram.com/scraped_art.yzzy/" target="_blank">
           <svg className="w-6 h-6 hover:text-link-color" width="24" strokeWidth="2"
             stroke="currentColor"

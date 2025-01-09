@@ -29,7 +29,7 @@ const LargeFooter = () => {
         <div className="grid grid-cols-2 grid-rows-2 grid-flow-col">
 
           <FooterLink hrefName="gallery" name="Artwork Gallery" />
-          <FooterLink hrefName="commissions" name="Scratchboard Commissions" />
+          <FooterLink hrefName="commissions" name="Commissions" />
           <FooterLink hrefName="art-process" name="Art Process" />
           <FooterLink hrefName="about-the-artist" name="About The Artist" />
         </div>
@@ -38,7 +38,7 @@ const LargeFooter = () => {
         <p className="w-full pb-3">Contact</p>
         <hr className="bg-white h-0.5 border-none w-full mb-5 mr-3" />
         <div className="grid grid-cols-1 grid-rows-2">
-          <FooterLink hrefName="contact" name="Contact The Artist" />
+          <FooterLink hrefName="contact" name="Contact" />
           <FooterLink
             hrefName="https://www.instagram.com/scraped_art.yzzy/"
             name="Instagram"
@@ -56,14 +56,14 @@ const SmallFooter = () => {
       <p className=" pb-3 ">Browse</p>
       <hr className=" bg-white h-0.5 border-none  mb-3 mr-3 " />
       <FooterLink hrefName="gallery" name="Artwork Gallery" />
-      <FooterLink hrefName="commissions" name="Scratchboard Commissions" />
+      <FooterLink hrefName="commissions" name="Commissions" />
       <FooterLink hrefName="art-process" name="Art Process" />
       <FooterLink hrefName="about-the-artist" name="About The Artist" />
     </div>
     <div className="flex flex-col w-full">
       <p className="pb-3">Contact</p>
       <hr className="bg-white h-0.5 border-none mb-3 mr-3" />
-      <FooterLink hrefName="contact" name="Contact The Artist" />
+      <FooterLink hrefName="contact" name="Contact" />
       <FooterLink
         hrefName="https://www.instagram.com/scraped_art.yzzy/"
         name="Instagram"
