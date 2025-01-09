@@ -38,6 +38,9 @@ export function Artwork({
     >
       <CldImage
         priority={Number(resource.context.order) > 5 ? true : false}
+        width={2000}
+        height={2000}
+        aspectRatio={resource.aspect_ratio}
         src={resource.secure_url}
         alt={resource.context.alt}
         placeholder="blur"

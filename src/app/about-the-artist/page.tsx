@@ -9,7 +9,7 @@ export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
   title: "About The Artist - Ysabelle Kmieć",
-  description: "Ysabelle Kmieć is a Canadian scratchboard artist from Edmonton, Alberta. Her passion for scratchboard fuels her work and aspirations to one day do this full-time.",
+  description: "Ysabelle Kmieć has been working with scratchboard since 2021. She is currently working out of Edmonton, Alberta and towards a Signature membership with ISSA.",
 };
 
 export default function AboutTheArtistPage() {

@@ -27,7 +27,7 @@ export function Timeline({
   let yStart = 45;
   let yEnd = 120;
   let circleCenter = 150;
-  let lineDelay = 3;
+  let lineDelay = 2;
   let circleDelay = lineDelay + 1;
   let firstLineCompleted = false;
   const shapeList: JSX.Element[] = [];
@@ -123,7 +123,7 @@ export function Timeline({
           animate={{ pathLength: 1, opacity: 1 }}
           transition={{
             duration: 1,
-            delay: 2,
+            delay: 1,
           }}
           x="35"
           y="15"
