@@ -40,7 +40,7 @@ export function NavbarDrawer() {
 
   return (
 
-    <div className="sm:hidden">
+    <div className="sm:hidden z-20">
       <button
         type="button"
         className="place-items-center self-center p-2 w-12 h-12 text-sm text-white"

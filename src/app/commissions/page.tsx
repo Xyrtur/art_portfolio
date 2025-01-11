@@ -38,16 +38,18 @@ export default function CommissionsPage() {
             <h2>Base Pricing</h2>
             <hr className="mt-3 mx-[25%] mb-8 border-secondary-color" />
           </div>
-          <div className="lg:col-start-1 lg:columns-2 max-lg:columns-2 w-80 text-[0.9rem] sm:text-base sm:max-lg:w-96 gap-10 space-y-2 justify-self-center">
-            <p>5” X 7” – $400</p>
-            <p>8” X 10” – $500</p>
-            <p>9” X 12” – $600</p>
-            <p>12” X 12” - $700</p>
-            <p>11” X 14” – $800</p>
-            <p>12” X 16” – $850</p>
-            <p>16” X 20” – $1,000</p>
-            <p>18” X 24” – $1,350</p>
-            <p>24” X 36” – $2,700</p>
+          <div className="lg:col-start-1 lg:columns-2 max-lg:columns-2 w-80 text-[0.9rem] sm:text-base sm:w-96 gap-10 space-y-2 justify-self-center">
+            <p>5” X 7” – $450</p>
+            <p>6” X 6” – $450</p>
+            <p>8” X 8” – $650</p>
+            <p>8” X 10” – $800</p>
+            <p>9” X 12” – $850</p>
+            <p>12” X 12” - $1,300</p>
+            <p>11” X 14” – $1,350</p>
+            <p>12” X 16” – $1,700</p>
+            <p>16” X 20” – $1,950</p>
+            <p>18” X 24” – $2,700</p>
+            <p>24” X 36” – $5,800</p>
           </div>
           <div className="text-[0.9rem] sm:text-base leading-relaxed sm:leading-normal lg:col-start-2 lg:row-start-1 lg:row-span-2 max-lg:mx-[10%] lg:ml-8 mt-10 space-y-4">
             <p>

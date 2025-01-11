@@ -19,11 +19,12 @@ export function Timeline({
     "Signature member - ISSA",
     "Complete series on mountains",
     "Complete series on waterfalls",
+    "Publish a portfolio book",
     "Be represented by a gallery",
-    "Join ASA and SAA",
+    "Join ASA and FCA",
     "Master member - ISSA",
   ];
-  const datesList: string[] = ["2024", "2024", "(2025)", "(2026)", "(2026)", "(2027)", "(2029)", "(2032)", "(2033)", "(2036)"];
+  const datesList: string[] = ["2024", "2024", "(2025)", "(2026)", "(2026)", "(2026)", "(2027)", "(2028)", "(2030)", "(2031)", "(2033)"];
   let yStart = 45;
   let yEnd = 120;
   let circleCenter = 150;
@@ -108,10 +109,10 @@ export function Timeline({
       )}
       {/* To add a new goal to timeline: add (estimate it)rem to height className and 80 to svg height*/}
       <motion.svg
-        className="min-[800px]:h-[38.5rem] max-[800px]:h-[43rem] lg:h-[43rem] w-16 text-white self-start "
+        className="min-[800px]:h-[40.5rem] max-[800px]:h-[46rem] lg:h-[46rem] w-16 text-white self-start"
         width="50"
-        height="1620"
-        viewBox="25 -30 50 1620"
+        height="1730"
+        viewBox="25 -40 50 1730"
         strokeWidth="4"
         stroke="currentColor"
         strokeLinecap="round"

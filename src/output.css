@@ -8671,6 +8671,14 @@ a {
     height: 43rem;
   }
 
+  .max-\[800px\]\:h-\[45rem\] {
+    height: 45rem;
+  }
+
+  .max-\[800px\]\:h-\[46rem\] {
+    height: 46rem;
+  }
+
   .max-\[800px\]\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -8839,6 +8847,10 @@ a {
 
   .sm\:w-5 {
     width: 1.25rem;
+  }
+
+  .sm\:w-96 {
+    width: 24rem;
   }
 
   .sm\:grid-cols-\[max-content_1fr\] {
@@ -9109,6 +9121,10 @@ a {
     height: 38.5rem;
   }
 
+  .min-\[800px\]\:h-\[40\.5rem\] {
+    height: 40.5rem;
+  }
+
   .min-\[800px\]\:-translate-x-5 {
     --tw-translate-x: -1.25rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -9212,6 +9228,14 @@ a {
     height: 100%;
   }
 
+  .lg\:h-\[45rem\] {
+    height: 45rem;
+  }
+
+  .lg\:h-\[46rem\] {
+    height: 46rem;
+  }
+
   .lg\:w-12 {
     width: 3rem;
   }
@@ -9250,6 +9274,10 @@ a {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
   }
 
   .lg\:translate-x-full {
