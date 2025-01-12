@@ -10,6 +10,7 @@ export function AboutArtistPicture() {
         <CldImage
           className="object-cover"
           fill
+          priority
           alt={"Headshot picture of Ysabelle Kmieć, looking to the side with head turned."}
           src={
             "https://res.cloudinary.com/dsdaz0tnz/image/upload/v1736658954/profile_pic_circle_npszub.jpg"
@@ -27,6 +28,7 @@ export function ContactPicture() {
         <CldImage
           className="object-cover"
           fill
+          priority
           alt={"Headshot picture of Ysabelle Kmieć, looking to the side with head turned."}
           src={
             "https://res.cloudinary.com/dsdaz0tnz/image/upload/v1736656185/profile_pic_1_xkf3pu.jpg"
