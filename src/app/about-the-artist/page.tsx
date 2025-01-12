@@ -1,6 +1,6 @@
 /** @format */
 
-import { ProfilePicture } from "@/components/profile_picture";
+import { AboutArtistPicture } from "@/components/profile_picture";
 import Footer from "@/components/footer";
 import { Timeline } from "@/components/timeline";
 import { Metadata } from "next";
@@ -20,7 +20,7 @@ export default function AboutTheArtistPage() {
           <h1 className="text-3xl text-secondary-color min-[800px]:pb-10 mt-5">
             About The Artist
           </h1>
-          <ProfilePicture />
+          <AboutArtistPicture />
           <p className="text-lg min-[800px]:-translate-x-5 w-full mb-12  bg-secondary-color/25 p-3 max-[800px]:p-5 text-white">
             &#34;Climb rock, shoot rock, draw rock, scratch rock, be rock. Also applying to waterfalls&#34;
           </p>
@@ -55,7 +55,7 @@ export default function AboutTheArtistPage() {
         </div>
         <div className="max-[800px]:hidden flex flex-row space-x-16 lg:space-x-14 2xl:space-x-20 mx-[5%] xl:mx-[10%] ">
           <div className="flex flex-col items-center">
-            <ProfilePicture />
+            <AboutArtistPicture />
             <div className="border-secondary-color border-1 p-5 lg:p-8 w-full lg:w-[75%] mt-8">
               <p className="text-lg pb-3">Current Associations</p>
               <p className="pb-10 text-sm pl-3">Active Member - ISSA</p>
