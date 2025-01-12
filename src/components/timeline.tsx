@@ -2,6 +2,7 @@
 
 "use client";
 import { motion } from "framer-motion";
+import { JSX } from "react";
 
 export function Timeline({
   showTitle = true,
