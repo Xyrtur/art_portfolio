@@ -26,9 +26,6 @@ export const theme = {
       "accent-gray": "#3F3F44",
       "accent-gray-border": "#2E333C",
       "banner-color": "#EAC435",
-    },
-    screens: {
-      '3xl': '1800px'
     }
   },
 };

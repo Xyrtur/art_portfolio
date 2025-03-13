@@ -1,6 +1,6 @@
 /** @format */
 
-import { ContactPicture } from "@/components/profile_picture";
+import { ProfilePicture } from "@/components/profile_picture";
 import Footer from "@/components/footer";
 import { Metadata } from "next";
 import { ContactForm } from "@/components/contact/contact_form";
@@ -18,7 +18,7 @@ export default function ContactPage() {
     <>
       <main className="flex flex-col items-center md:flex-row gap-x-24 2xl:space-x-44 mx-[5%] 2xl:ml-[10%] 2xl:mr-[15%]">
         <div className="flex flex-col w-2/3 xl:w-3/4 2xl:w-full items-center text-sm space-y-2">
-          <ContactPicture />
+          <ProfilePicture />
           <p>Ysabelle Kmieć</p>
           <p>Edmonton, Alberta, Canada</p>
           <p>(587)-590-5467</p>

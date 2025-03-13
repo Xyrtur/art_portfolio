@@ -27,7 +27,7 @@ export function GenericCTA({
     >
       {isGalleryCTA && (
         <div className="grid grid-rows-2 grid-cols-2 sm:flex sm:flex-row gap-x-8 items-center">
-          <div className="sm:w-1/4 h-72 relative">
+          <div className="sm:w-1/4 h-56 relative">
             <CldImage
               fill
               className="object-contain"

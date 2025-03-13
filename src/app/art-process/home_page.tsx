@@ -5,7 +5,7 @@ import { Timeline } from '@/components/timeline';
 import { ToTopButton } from '@/components/to_top_button';
 import Video from 'next-video';
 import { PlaybackID } from '@mux/mux-node/resources/shared.mjs';
-import { JSX, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
@@ -45,7 +45,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
 
     for (let i = 0; i < videos.length; i++) {
         singleVideoColumn.push(<div key={(videos[i].playback_ids as PlaybackID[])[0].id} className="md:pb-10 self-center">
-            <Video src={`https://stream.mux.com/${(videos[i].playback_ids as PlaybackID[])[0].id}.m3u8`} color="#FAB3A9" width={isMinMd ? 315 : 276} height={isMinMd ? 560 : 490.6} className="lg:h-full" />
+            <Video src={`https://stream.mux.com/${(videos[i].playback_ids as PlaybackID[])[0].id}.m3u8`} accentColor="#FAB3A9" width={isMinMd ? 315 : 276} height={isMinMd ? 560 : 490.6} className="lg:h-full" />
         </div>);
         const [title, date, desc] = videos[i].passthrough!.split(';');
 
@@ -108,7 +108,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
                     } else {
                         return (
                             <div key={(item.playback_ids as PlaybackID[])[0].id} className="pb-10 self-center">
-                                <Video src={`https://stream.mux.com/${(item.playback_ids as PlaybackID[])[0].id}.m3u8`} color="#FAB3A9" width={315} height={560} className="lg:h-full" />
+                                <Video src={`https://stream.mux.com/${(item.playback_ids as PlaybackID[])[0].id}.m3u8`} accentColor="#FAB3A9" width={315} height={560} className="lg:h-full" />
                             </div>
 
                         );
@@ -135,7 +135,7 @@ export default function ArtProcessPage({ videos }: { videos: VideoAsset[] }) {
                     } else {
                         return (
                             <div key={(item.playback_ids as PlaybackID[])[0].id} className="pb-10 self-center">
-                                <Video src={`https://stream.mux.com/${(item.playback_ids as PlaybackID[])[0].id}.m3u8`} color="#FAB3A9" width={315} height={560} className="lg:h-full" />
+                                <Video src={`https://stream.mux.com/${(item.playback_ids as PlaybackID[])[0].id}.m3u8`} accentColor="#FAB3A9" width={315} height={560} className="lg:h-full" />
                             </div>
 
 

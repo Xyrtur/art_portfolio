@@ -10,7 +10,7 @@ export const revalidate = 300; // seconds
 
 export const metadata: Metadata = {
   title: "Ysabelle Kmieć | Scratchboard Artwork Portfolio",
-  description: "Ysabelle Kmieć is a Canadian scratchboard artist from Edmonton, Alberta and is currently working to specialize in natural landscapes.",
+  description: "Ysabelle Kmieć is a Canadian scratchboard artist from Edmonton, Alberta and is currently working to specialise in natural landscapes.",
 };
 
 export default function LandingPage() {
@@ -18,19 +18,19 @@ export default function LandingPage() {
     <>
       <main className="flex flex-col xl:px-24 2xl:px-44">
         <Banner
-          eventName=""
-          eventText=""
+          eventName="Crimson Alley"
+          eventText="Join me in Manchester Square from Dec 7, 14 to see my works"
           showBanner={false}
         />
-        <div className="flex flex-col lg:pl-16 2xl:pl-0 lg:flex-row-reverse lg:gap-x-5 2xl:gap-x-24 3xl:gap-x-36 mb-10">
+        <div className="flex flex-col lg:pl-16 2xl:pl-0 lg:flex-row-reverse lg:gap-x-5 2xl:max-[1800px]:gap-x-24 min-[1800px]:gap-x-36 mb-10">
           <LandingImage />
-          <h1 className="border-1 border-secondary-color p-5 sm:p-10 w-5/6 md:w-2/3 2xl:w-1/2 max-lg:mt-5 flex-initial place-self-center text-lg">
+          <h1 className="border-1 border-secondary-color p-5 sm:p-10 w-5/6 md:w-2/3 2xl:max-[1800px]:w-1/2 min-[1800px]:w-1/3 max-lg:mt-5 flex-initial place-self-center text-lg">
             <p className="mb-3">
               Welcome! I am a Canadian scratchboard artist from Edmonton,
-              Alberta. Still very much in my early learning stage, I am branching out into new textures with every piece. My sights are set on the Rockies! :)
+              Alberta.
             </p>
             <p>
-              Stick around, visit my gallery, and follow my Instagram for
+              Explore the site, visit my gallery, and follow my Instagram for
               upcoming events and works in progress.
             </p>
           </h1>
